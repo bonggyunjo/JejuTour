@@ -60,13 +60,14 @@ nav ul{
 }
 #nav-list {
 	text-align : center;
+	width:100%;
 }
 #nav-list li{
-	display: inline-block;
-	float : left;
-	margin: 0 115px;
+	display:inline-block;
+	margin: 0 7%;
 	top:-8px;
 	position : relative;
+	
 	
 }
 #menubar ul li a:hover {

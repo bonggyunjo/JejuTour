@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="login.css">
 <link rel="stylesheet" href="loginbasic.css">
 <meta name="viewport" content="width=device-width", initial-scale="1">
-<link rel="stylesheet" href="css/bootstrap.css">
 <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet" >
 <title>로그인</title>
 </head>
@@ -20,7 +19,7 @@
         <div class="header-align">
         <div id ="header-top">		
         <span>
-             <a href="mypage.jsp"  >
+             <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
               마이페이지 |
               </a>
         <span>
@@ -29,34 +28,39 @@
               로그인 |
               </a>
         <span>
-        <a href="membership.jsp" >
+        <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
             회원가입
             </a>
         </span>	
         </div>
         
         <div id="header-mainname">
-            <h1> 제주어서옵세   </h1>
+            <h1><a href="http://101.101.218.251:8080/JejuTour/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a></h1>
         </div>
         
         </div>
         </header>
     <main>
-        <div id="header-align">
+        <div id="main-align">
         <h1>로그인</h1>
         <div >
 	<form action="login_ok.jsp" method="post">
         <div id="id-align">
-		아이디 : <input type="text" name="id"><br/>
+		아이디 : <input type="text" name="id" style="border: 2px solid darkgray;"><br/>
         </div>
         <div id="pw-align">
-		비밀번호 : <input type="password" name="pw"> <br/>
+		비밀번호 : <input type="password" name="pw" style="border: 2px solid darkgray;"> <br/>
         </div>  
-        <div  >
-				<input type="submit" value="로그인" style="height: 45px; width: 135px; float: left; right:-105px; position: relative;">
-                <button style="height : 45px; width: 135px; float: left; right:-170px; position: relative;">
-                    <a href="http://101.101.218.251:8080/JejuTour/JejuTour/login/membership/membership.jsp">회원가입</a></button>
-				<div id="errMsg" style="color:red"> <%= errMsg %> </div>
+        <div id="button-going">
+				<input type="submit" value="로그인" style="height: 45px; width: 20%; float: left; right:-6%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray;  ">
+
+                <button style="height : 45px; width: 20%; float: left; right:-17%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray;">
+
+                    <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" style="color: black; 
+                    text-decoration: none;">회원가입</a></button>
+                    <div id="errMsg" style="color:red"> <%= errMsg %> </div>
             </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
 	<div class="header-align">
 	<div id ="header-top">		
 	<span>
-		 <a href="mypage.jsp"  >
+		 <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
 		  마이페이지 |
 		  </a>
 	<span>
@@ -26,14 +26,14 @@
 		  로그인 |
 		  </a>
 	<span>
-	<a href="membership.jsp" >
+	<a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
 		회원가입
 		</a>
 	</span>	
 	</div>
 	
 	<div id="header-mainname">
-		<h1> 제주어서옵세   </h1>
+		<h1><a href="http://101.101.218.251:8080/JejuTour/main.jsp" style="color:#77c466;"> 제주어서옵세</a>   </h1>
 	</div>
 	
 	</div>
