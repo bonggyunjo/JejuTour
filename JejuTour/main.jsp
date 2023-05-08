@@ -42,7 +42,7 @@
 	<div id="nav-align">
 		<ul id="nav-list">
 		
-		<li> <a href="Introduce.jsp" >소개</a></li>
+		<li> <a href="http://101.101.218.251:8080/JejuTour/Introduce/Introduce.jsp">소개</a></li>
 		<li><a href="Iodgment.jsp" >숙박</a></li>
 		<li><a href="Transportation.jsp" >이동 수단</a></li>
 		<li><a href="Course.jsp" >추천 코스</a></li>

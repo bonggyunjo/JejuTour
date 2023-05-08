@@ -5,6 +5,7 @@
 <head>
     <script>
         function check(){
+           
             if(document.getElementById("id").value==""){
                 alert("아이디를 입력하세요");
                 return;
@@ -12,9 +13,7 @@
             if(document.getElementById("pw").value==""){
                 alert("비밀번호를 입력하세요");
                 return;
-            }
-           
-        
+            }      
             if(document.getElementById("name").value==""){
                alert("이름을 입력하세요");
                return;
@@ -35,6 +34,7 @@
                alert("휴대폰번호를 입력하세요");
                return;
             }
+        
             frm.submit(); //직접 submit()이라는 메소드를 호출. 액션을 들고 가줌
         }
         </script>

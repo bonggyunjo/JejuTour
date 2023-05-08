@@ -1,6 +1,7 @@
 <%@ page import="java.sql.DriverManager" %>
 <%@ page import="java.sql.PreparedStatement" %>
 <%@ page import="java.sql.Connection" %>
+<%@page import="java.sql.ResultSet" %>
 <%@ page contentType="text/html" pageEncoding="utf-8"  %>
 <%@ page import= "java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -47,15 +48,15 @@ Class.forName("com.mysql.jdbc.Driver");
 			
 			response.sendRedirect("login_welcome.jsp"); // 페이지이동
 			
-		} else{ // 로그인 실패
-			
-			response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp");
+		} else if(rs.getString("id")==null || rs.getString("pw")==null){ // 로그인 실패
+			session.setAttribute("errMsg", "로그인 정보가 올바르지 않습니다");
+			response.sendRedirect("login.jsp");
 		
-		session.setAttribute("errMsg", "로그인 정보가 올바르지 않습니다");
+		
 		}
 	} catch(Exception e){
 		e.printStackTrace();
-		response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp"); // 에러가 난 경우도 리다이렉트
+		response.sendRedirect("login.jsp"); // 에러가 난 경우도 리다이렉트
 	} finally{
 		try{
 			if(conn != null) conn.close();
