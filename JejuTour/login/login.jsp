@@ -44,7 +44,7 @@
         <div id="main-align">
         <h1>로그인</h1>
         <div >
-	<form action="login_ok.jsp" method="post">
+	<form action="./login_ok.jsp" method="post">
         <div id="id-align">
 		아이디 : <input type="text" name="id" style="border: 2px solid darkgray;"><br/>
         </div>

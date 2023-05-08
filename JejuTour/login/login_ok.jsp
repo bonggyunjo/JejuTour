@@ -1,9 +1,8 @@
-<%@page import="java.sql.DriverManager" %>
-<%@page import="java.sql.PreparedStatement" %>
-<%@page import="java.sql.Connection" %>
-<%@page import="java.sql.ResultSet" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page contentType="text/html" pageEncoding="utf-8"  %>
+<%@ page import= "java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,22 +16,19 @@
 	String id=request.getParameter("id");
 	String pw=request.getParameter("pw");
 	
-	String url = "jdbc:mariadb://localhost:3306/test";
-	String uid ="root";
-	String upw ="12341234";
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	
-	String sql = "select * from members where id=? and pw=?";
+	String sql = "select * from membership where id=? and pw=?";
 	
 	try{
 		
-Class.forName("org.mariadb.jdbc.Driver");
+Class.forName("com.mysql.jdbc.Driver");
 		
 		// conn 생성
-		conn = DriverManager.getConnection(url, uid, upw);
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/JejuTour?serverTimezone=UTC", "bonggyun", "12341234");
 		
 		// pstmt 생성
 		pstmt = conn.prepareStatement(sql);
@@ -53,13 +49,13 @@ Class.forName("org.mariadb.jdbc.Driver");
 			
 		} else{ // 로그인 실패
 			
-			response.sendRedirect("login.jsp");
+			response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp");
 		
 		session.setAttribute("errMsg", "로그인 정보가 올바르지 않습니다");
 		}
 	} catch(Exception e){
 		e.printStackTrace();
-		response.sendRedirect("login.jsp"); // 에러가 난 경우도 리다이렉트
+		response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp"); // 에러가 난 경우도 리다이렉트
 	} finally{
 		try{
 			if(conn != null) conn.close();
