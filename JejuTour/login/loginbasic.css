@@ -36,3 +36,10 @@ h1,h2,h3,h4,h5,h6{  /*h태그는 쓸데없이 마진공간을 차지하는경우
     border: 1px solid black;
     border-radius: 50px;    
 }
+
+#errMsg{
+    display:block;
+    text-align: center;
+    margin : auto;
+    width:50%;
+}
