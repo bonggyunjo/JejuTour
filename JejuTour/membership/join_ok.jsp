@@ -54,7 +54,9 @@
 		if(result == 1){ // 
 			response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp");
 		} 
-		
+		else {
+			response.sendRedirect("http://101.101.218.251:8080/JejuTour/membership/membership.jsp");
+		}
 		
 	} catch(Exception e){
 		e.printStackTrace();		
