@@ -1,0 +1,17 @@
+@CHARSET "EUC-KR";
+#body-color {
+	background-color : #f2f4f7;
+	width:100%;
+	height:300px;
+	display:inline-block;
+}
+#span-color {
+	 background-color: yellow;
+	 text-color: red;
+	 width:100%;
+	 display:inline-block;
+}
+
+h3 {
+	color:red;
+}

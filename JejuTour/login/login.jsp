@@ -1,12 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
     <%
     String errMsg = (String)session.getAttribute("errMsg");
     if(errMsg==null) errMsg="";
     %>
+<<<<<<< HEAD
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+=======
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script>
+        function check(){
+            if(document.getElementById("id").value==""){
+                alert("아이디를 입력하세요");
+                return;
+            }
+            if(document.getElementById("pw").value==""){
+                alert("비밀번호를 입력하세요");
+                return;
+            }
+           
+        
+           
+            frm.submit(); //직접 submit()이라는 메소드를 호출. 액션을 들고 가줌
+        }
+        </script>
+
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="login.css">
 <link rel="stylesheet" href="loginbasic.css">
@@ -22,11 +50,19 @@
              <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
               마이페이지 |
               </a>
+<<<<<<< HEAD
         <span>
+=======
+            </span>
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
         <span>
              <a href="http://101.101.218.251:8080/JejuTour/login/login.jsp"  >
               로그인 |
               </a>
+<<<<<<< HEAD
+=======
+        </span>
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
         <span>
         <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
             회원가입
@@ -44,6 +80,7 @@
         <div id="main-align">
         <h1>로그인</h1>
         <div >
+<<<<<<< HEAD
 	<form action="login_ok.jsp" method="post">
         <div id="id-align">
 		아이디 : <input type="text" name="id" style="border: 2px solid darkgray;"><br/>
@@ -53,6 +90,17 @@
         </div>  
         <div id="button-going">
 				<input type="submit" value="로그인" style="height: 45px; width: 20%; float: left; right:-6%; position: relative;
+=======
+	<form action="./login_ok.jsp" method="post" name="frm">
+        <div id="id-align">
+		아이디 : <input type="text" name="id" id="id" style="border: 2px solid darkgray;"><br/>
+        </div>
+        <div id="pw-align">
+		비밀번호 : <input type="password" name="pw" id="pw" style="border: 2px solid darkgray;"> <br/>
+        </div>  
+        <div id="button-going">
+				<input type="submit" value="로그인" onclick="check()" style="height: 45px; width: 20%; float: left; right:-6%; position: relative;
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
                 background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray;  ">
 
                 <button style="height : 45px; width: 20%; float: left; right:-17%; position: relative;
@@ -60,10 +108,20 @@
 
                     <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" style="color: black; 
                     text-decoration: none;">회원가입</a></button>
+<<<<<<< HEAD
                     <div id="errMsg" style="color:red"> <%= errMsg %> </div>
             </div>
             </div>
         </div>
+=======
+                    
+                    
+            </div>
+            </div>
+            <div id="errMsg" style="color:red"> <%= errMsg %> </div>
+        </div>
+       
+>>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
         </main>
 	</form>
 </body>

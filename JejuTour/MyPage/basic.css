@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    margin: 0;
+    padding: 0;
+}
 .blind {
     position: absolute;
     overflow: hidden;
@@ -11,10 +15,6 @@
     height: -1;
 }
 
-html, body{
-    margin : 0px;
-    padding : 0px;
-}
 
 h1,h2,h3,h4,h5,h6{  /*h태그는 쓸데없이 마진공간을 차지하는경우가 많이 때문에 그냥 0으로 줘버림 */
     margin:0;
@@ -36,13 +36,5 @@ h1,h2,h3,h4,h5,h6{  /*h태그는 쓸데없이 마진공간을 차지하는경우
     border: 1px solid black;
     border-radius: 50px;    
 }
-<<<<<<< HEAD
-=======
 
-#errMsg{
-    display:block;
-    text-align: center;
-    margin : auto;
-    width:50%;
-}
->>>>>>> 98c10ff789b1d597eee879da73ee2b0a7cc502ea
+
