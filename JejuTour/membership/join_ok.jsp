@@ -36,7 +36,7 @@
 		Class.forName("com.mysql.jdbc.Driver");
 				// 2. conn 
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/JejuTour?serverTimezone=UTC", "bonggyun", "12341234");
-		 Statement stmt = conn.createStatement();
+		
 		// 3. pstmt 
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, id);
@@ -48,7 +48,7 @@
 		pstmt.setString(7, phone2);
 		pstmt.setString(8, phone3);
 		pstmt.setString(9, gender);
-		
+	
 		// 4. sql
 		result = pstmt.executeUpdate();
 		

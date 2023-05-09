@@ -41,11 +41,12 @@
              <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
               마이페이지 |
               </a>
-        <span>
+            </span>
         <span>
              <a href="http://101.101.218.251:8080/JejuTour/login/login.jsp"  >
               로그인 |
               </a>
+        </span>
         <span>
         <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
             회원가입
