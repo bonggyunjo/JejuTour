@@ -24,7 +24,7 @@
             top:10px; color:lightgray"><%= id%>(<%= name %>님)</span> </span>
       
         <span>
-			<a href="http://101.101.218.251:8080/JejuTour/MyPage/myPage.jsp">
+			<a href="http://101.101.218.251:8080/JejuTour/MyPage/loginSuccessMyPage.jsp">
             마이페이지</a>
         </span>	
         <span>

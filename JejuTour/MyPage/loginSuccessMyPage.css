@@ -1,0 +1,23 @@
+span img{
+	width:40px;
+	height:px;
+	float:left;
+}
+
+.header-align{
+	margin: 0 auto;
+	padding : 5px;
+    width: 100%;
+    height:150px;
+    
+}
+
+#header-top {
+	float:right;	
+	position:relative;
+	top: 5px;
+	width:100%;
+	display: block;
+	text-align: right;
+	left: -3.3%;
+}
