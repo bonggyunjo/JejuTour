@@ -53,17 +53,15 @@
 		result = pstmt.executeUpdate();
 		
 		if(result == 1){ // 
-			response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp");
+			response.sendRedirect("../Login/login.jsp");
 		} 
 		else {
-			response.sendRedirect("http://101.101.218.251:8080/JejuTour/membership/membership.jsp");
+			response.sendRedirect("../Membership/membership.jsp");
 		}
 		
 	} catch(Exception e){
 		e.printStackTrace();		
-		out.println("실패");
-		response.sendRedirect("http://101.101.218.251:8080/JejuTour/membership/membership.jsp");
-		
+		response.sendRedirect("../Membership/membership.jsp");
 		
 	} finally{
 		try{

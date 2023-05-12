@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -38,7 +37,7 @@
             frm.submit(); //직접 submit()이라는 메소드를 호출. 액션을 들고 가줌
         }
         </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
  <link rel = "stylesheet" href="membershipbasic.css">
  <link rel = "stylesheet" href="membership.css">
  <meta name="viewport" content="width=device-width", initial-scale="1">
@@ -50,23 +49,23 @@
         <div class="header-align">
         <div id ="header-top">		
         <span>
-             <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
+             <a href="../Login/login.jsp"  >
               마이페이지 |
               </a>
         <span>
         <span>
-             <a href="http://101.101.218.251:8080/JejuTour/login/login.jsp"  >
+             <a href="../Login/login.jsp"  >
               로그인 |
               </a>
         <span>
-        <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
+        <a href="../Membership/membership.jsp" >
             회원가입
             </a>
         </span>	
         </div>
         
         <div id="header-mainname">
-            <h1><a href="http://101.101.218.251:8080/JejuTour/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a>  </h1>
+            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a>  </h1>
         </div>
         
         </div>
@@ -76,7 +75,7 @@
         <div id="main-align">
 
 	<h2>회원가입</h2>
-	<form action="http://101.101.218.251:8080/JejuTour/membership/join_ok.jsp" name="frm" method="post" onsubmit="return joinCheck(this)">
+	<form action="../Membership/join_ok.jsp" name="frm" method="post" onsubmit="return joinCheck(this)">
 
         
 	<div class="input-id">
@@ -104,7 +103,7 @@
 
         <div class="input-phone">
         		전화번호:
-                <span style="left:2.2%;position: relative; ">
+                <span style="left:2.2%; position: relative; ">
 		<select name="phone1" style="width:8%; height:25px;" >
 			<option>010</option>
 			<option>02</option>

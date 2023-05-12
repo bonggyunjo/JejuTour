@@ -40,6 +40,7 @@ Class.forName("com.mysql.jdbc.Driver");
 		rs = pstmt.executeQuery();
 		
 		if(rs.next()){ // 로그인 성공(인증의 수단 session)
+				
 			id = rs.getString("id");
 			String name = rs.getString("name");
 		
@@ -48,13 +49,10 @@ Class.forName("com.mysql.jdbc.Driver");
 			
 			response.sendRedirect("login_welcome.jsp"); // 페이지이동
 			
-		} else if(rs.getString("id")==null || rs.getString("pw")==null){ // 로그인 실패
-			session.setAttribute("errMsg", "로그인 정보가 올바르지 않습니다");
-			response.sendRedirect("login.jsp");
-		
-		
+		} else 
+			response.sendRedirect("login_fail.jsp");
 		}
-	} catch(Exception e){
+	 catch(Exception e){
 		e.printStackTrace();
 		response.sendRedirect("login.jsp"); // 에러가 난 경우도 리다이렉트
 	} finally{

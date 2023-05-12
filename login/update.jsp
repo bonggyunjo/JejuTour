@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-	// 이전화면에서 전달받은 데이터를 받습니다.
-	// 화면에 미리 보여지도록 처리를 하세요~
+
 	request.setCharacterEncoding("UTF-8");
 
 	String id = (String)request.getAttribute("id");

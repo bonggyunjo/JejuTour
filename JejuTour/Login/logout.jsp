@@ -1,7 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="utf-8"  %>
 <%
 session.invalidate();
-response.sendRedirect("http://101.101.218.251:8080/JejuTour/login/login.jsp");
+response.sendRedirect("../Main/main.jsp");
 %>
 <!DOCTYPE html>
 <html lang="en">

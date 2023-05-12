@@ -38,24 +38,24 @@
         <div class="header-align">
         <div id ="header-top">		
         <span>
-             <a href="http://101.101.218.251:8080/JejuTour/mypage.jsp"  >
+             <a href="../Login/login.jsp"  >
               마이페이지 |
               </a>
             </span>
         <span>
-             <a href="http://101.101.218.251:8080/JejuTour/login/login.jsp"  >
+             <a href="../Login/login.jsp"  >
               로그인 |
               </a>
         </span>
         <span>
-        <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" >
+        <a href="../Membership/membership.jsp" >
             회원가입
             </a>
         </span>	
         </div>
         
         <div id="header-mainname">
-            <h1><a href="http://101.101.218.251:8080/JejuTour/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a></h1>
+            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a></h1>
         </div>
         
         </div>
@@ -78,13 +78,13 @@
                 <button style="height : 45px; width: 20%; float: left; right:-17%; position: relative;
                 background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray;">
 
-                    <a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp" style="color: black; 
+                    <a href="../Membership/membership.jsp" style="color: black; 
                     text-decoration: none;">회원가입</a></button>
                     
                     
             </div>
             </div>
-            <div id="errMsg" style="color:red"> <%= errMsg %> </div>
+            <div id="errMsg" style="color:red"> 아이디 또는 비밀번호가 올바르지 않습니다. </div>
         </div>
        
         </main>

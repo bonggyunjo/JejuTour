@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'Cafe24Oneprettynight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.header-align {
+	margin: 0 auto;
+	padding: 5px;
+	width: 100%;
+	height: 150px;
+
+}
+
+#header-top {
+	float: right;
+	position: relative;
+	left: -60px;
+	top: 5px;
+}
+
+
+#header-mainname {
+	padding: 30px;
+	text-align: center;
+	font-family: 'Cafe24Oneprettynight';
+	font-size: 1.7em;
+	color: #77c466;
+
+
+}
+
+#headersatag-style {
+	text-decoration: none;
+}
+
+#header-top span {
+	color: #111111;
+	/*앞과뒤의글자가 같은경우 하나로 줄일 수 있음 #888; */
+	letter-spacing: -1px;
+	/* 글자사이의 간격 */
+	font-size: 17px;
+	/*폰트의 크기 */
+	line-height: 10px;
+	/*텍스트 라인 높이간격 */
+	text-shadow: 1px 1px 1px #000;
+
+}
+
+nav ul {
+	margin: 10px;
+	padding: 16px 0 0 4px;
+	list-style: none;
+	display: inline-block;
+	font-weight: bold;
+}
+
+#nav-list {
+	text-align: left;
+	width: 100%;
+}
+
+#nav-list li {
+	display: inline-block;
+	margin: 0 7%;
+	top: -8px;
+	position: relative;
+}
+
+
+#menubar ul li a:hover {
+	color: #010000;
+}
+
+
+/* #main-picture {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	animation: fadein 8s ease 3s;
+	-webkit-animation: fadein 8s;
+} */
+
+/* #main-picture img {
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 500px;
+} */
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 3;
+	}
+}
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 3;
+	}
+}
+
+#img_area {
+	background-color: white;
+	text-align: center;
+	margin: auto;
+	display: block;
+	width: 70%;
+	height: 550px;
+}
+
+img {
+	display: block;
+	margin: 0px auto;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+#footer-tel {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 16px;
+	position: relative;
+	top: 20px;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #f2f4f7;
+}
