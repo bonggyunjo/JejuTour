@@ -18,7 +18,6 @@ html, body{
 
 h1,h2,h3,h4,h5,h6{  /*h태그는 쓸데없이 마진공간을 차지하는경우가 많이 때문에 그냥 0으로 줘버림 */
     margin:0;
-    float:left;
 }
 .inline-block{  /*인라인블록이 자주쓰이므로 인라인블록 클래스를 하나 만들어주면 좋음 */
     display:inline-block;
@@ -27,7 +26,6 @@ h1,h2,h3,h4,h5,h6{  /*h태그는 쓸데없이 마진공간을 차지하는경우
 .float-left{
     float:left;
 }
-
 #fixed {
     position: fixed;
     top: 50px;
