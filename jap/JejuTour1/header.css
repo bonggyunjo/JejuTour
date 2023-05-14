@@ -48,32 +48,46 @@
 
 }
 
+nav ul {
+	margin: 10px;
+	padding: 16px 0 0 4px;
+	list-style: none;
+	display: inline-block;
+	font-weight: bold;
+}
 
-#menubar  {
-	text-align: center;
-	padding:auto;
-	margin: auto;
+#nav-list {
+	text-align: left;
+	width: 100%;
+}
+
+#nav-list li {
+	display: inline-block;
+	margin: 0 7%;
+	top: -8px;
 	position: relative;
-	left: 25%;
-	right: 25%;
-} 
+}
 
 
-#main-picture {
+#menubar ul li a:hover {
+	color: #010000;
+}
+
+
+/* #main-picture {
 	position: relative;
 	width: 70%;
 	margin: 0 auto;
 	animation: fadein 8s ease 3s;
 	-webkit-animation: fadein 8s;
-} 
+} */
 
- #main-picture img {
+/* #main-picture img {
 	display: block;
 	margin: auto;
-	
 	width: 60%;
 	height: 500px;
-} 
+} */
 
 @keyframes fadein {
 	from {
