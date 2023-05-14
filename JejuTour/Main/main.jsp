@@ -44,7 +44,7 @@
 		<nav id="menubar">
 			<ul class="menu">
 				<li>
-				  <a href="#">소개</a>
+				  <a href="../Introduce/Introduce.jsp">소개</a>
 				</li>
 				<li>
 				  <a href="#">숙박</a>

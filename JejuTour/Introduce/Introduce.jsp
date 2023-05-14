@@ -8,42 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../basic.css">
         <link rel="stylesheet" href="../Main/header.css">
-        <link rel="stylesheet" href="../Introduce/Introduce.css">
-        <style>
-            .kind_wrap {
-                border: 2px solid black;
-                width: 100%;
-                max-width: 800px;
-                margin: 0 auto;
-                position: relative;
-            }
-
-            .kind_wrap>.kind_slider {
-                overflow: hidden;
-            }
-
-            .kind_wrap>.kind_slider .slider {
-                position: relative;
-                transition: 0.5s;
-            }
-
-
-            .kind_wrap>.kind_slider img {
-                vertical-align: top;
-            }
-
-            .kind_wrap .arrow>a.prev {
-                position: absolute;
-                left: -50px;
-                top: 100px;
-            }
-
-            .kind_wrap .arrow>a.next {
-                position: absolute;
-                right: -50px;
-                top: 100px;
-            }
-        </style>
+        <link rel="stylesheet" href="Introduce.css">
+     
         <title> 소개 </title>
     </head>
 
@@ -55,11 +21,12 @@
                         <a href="../Login/login.jsp ">
                             마이페이지 |
                         </a>
-                        <span>
+                        </span>
                             <span>
                                 <a href="../Login/login.jsp">
                                     로그인 |
                                 </a>
+                                </span>
                                 <span>
                                     <a href="../Membership/membership.jsp">
                                         회원가입
@@ -77,43 +44,8 @@
         <div class="kind_wrap">
 
             <div class="kind_slider">
-                <ul class="slider">
-                    <script>
-                        window.onload = function () {
-                            const kindWrap = document.querySelector('.kind_wrap');
-                            const slider = kindWrap.querySelector('.slider');
-                            const slideLis = slider.querySelectorAll('li');
-                            const moveButton = kindWrap.querySelector('.arrow');
-
-                            /* ul 넓이 계산해 주기 */
-                            const liWidth = slideLis[0].clientWidth;
-                            const sliderWidth = liWidth * slideLis.length;
-                            slider.style.width = `${sliderWidth}px`;
-
-                            /* 리스너 설치하기 */
-                            let currentIdx = 0; // 슬라이드 현재 번호
-                            let translate = 0; // 슬라이드 위치 값
-                            moveButton.addEventListener('click', moveSlide);
-
-                            function moveSlide(event) {
-                                event.preventDefault();
-                                if (event.target.className === 'next') {
-                                    if (currentIdx === slideLis.length - 1) return;
-                                    currentIdx++;
-                                    translate += -liWidth;
-                                    slider.style.left = `${translate}px`;
-                                } else {
-                                    if (currentIdx === 0) return;
-                                    currentIdx--;
-                                    translate += liWidth;
-                                    slider.style.left = `${translate}px`
-                                }
-                            }
-
-                        }
-
-
-                    </script>
+                <ul >
+             
                     <li><img src="jejuimage1.png" style="width:900px; height:410px;"></li>
                     <li><img src="jejuimage2.png" style="width:900px; height:410px;"></li>
                     <li><img src="jejuimage3.png" style="width:900px; height:410px;"></li>
@@ -121,10 +53,6 @@
                     <li><img src="jejuimage6.png" style="width:900px; height:410px;"></li>
                     <li><img src="jejuimage7.png" style="width:900px; height:410px;"></li>
                 </ul>
-            </div>
-            <div class="arrow">
-                <a href="" class="prev">〈 </a>
-                <a href="" class="next"> 〉 </a>
             </div>
         </div>
 

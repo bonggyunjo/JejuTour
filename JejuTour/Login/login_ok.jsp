@@ -24,7 +24,7 @@
 	
 	String sql = "select * from membership where id=? and pw=?";
 	
-	try{
+	
 		
 Class.forName("com.mysql.jdbc.Driver");
 		
@@ -47,23 +47,23 @@ Class.forName("com.mysql.jdbc.Driver");
 			session.setAttribute("user_id", id);
 			session.setAttribute("user_name", name);
 			
-			response.sendRedirect("login_welcome.jsp"); // 페이지이동
-			
-		} else 
-			response.sendRedirect("login_fail.jsp");
+			%>
+
+		<script>
+		alert("로그인 성공");
+		location.href="../Login/login_welcome.jsp";	
+		</script>
+
+		<%
+		} else{
+			%>
+			<script>
+			alert("로그인 실패");
+			location.href="../Login/login_fail.jsp";	
+			</script>
+			<%
 		}
-	 catch(Exception e){
-		e.printStackTrace();
-		response.sendRedirect("login.jsp"); // 에러가 난 경우도 리다이렉트
-	} finally{
-		try{
-			if(conn != null) conn.close();
-			if(pstmt != null) pstmt.close();
-			if(rs != null) rs.close();
-		} catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+	
 	%>
 </body>
 </html>

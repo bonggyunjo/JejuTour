@@ -30,7 +30,7 @@
             top:10px; color:lightgray"><%= id%>(<%= name %>님) <span style="font-size:15px;">안녕하세요!</span></span> </span>
       
 	   <span>
-            <a href="../Login/logout.jsp" style="float:right; position :relative; left:-6.5%;">
+            <a href="../Logout/logout.jsp" style="float:right; position :relative; left:-6.5%;">
             | 로그아웃 </a>
         </span>
 

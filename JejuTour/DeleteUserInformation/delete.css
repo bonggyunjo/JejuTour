@@ -33,7 +33,7 @@
 	font-family: 'Cafe24Oneprettynight';
 	font-size:1.7em;
 	color:#77c466;
-
+	
 	
 }
 #headersatag-style{
@@ -49,51 +49,8 @@
     top :-5px;
 
 }
-
 a {
 	text-decoration:none;
 	
-}
-
-#main-align{
-    width:65%;
-	height : 600px;
-    margin : auto;
-	padding : 30px;
-}
-#title{
-	text-align: center;
-	width:100%;
-	height: 80px;
-}
-#text-first{
-	border-bottom: 2px solid gray;
-	width:100%;
-	height:55px;
-}
-
-#update-user-information{
-	position : relative;
-	bottom : -25px;
-}
-
-#delete-user-information{
-	position : relative;
-	bottom : -45px;
-	width:100%;
-	
-	height:55px;
-}
-#reserve-user{
-	position : relative;
-	bottom : -120px;
-	width:100%;
-	height:55px;
-	border-bottom : 2px solid gray;
-}
-#reserve-ok{
-	width:100%;
-	position : relative;
-	bottom : -135px;
 }
 

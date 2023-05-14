@@ -12,7 +12,9 @@
 <title>JDBC Driver input data at membership</title>
 </head>
 <body>
+
 	<%
+		request.setCharacterEncoding("UTF-8");
 
 	String id =request.getParameter("id");
 	String pw =request.getParameter("pw");
@@ -30,7 +32,7 @@
 	int result=0;
 	String sql = "insert into membership values(?,?,?,?,?,?,?,?,?)";
 	
-	try{
+	
 		request.setCharacterEncoding("UTF-8");
 		// 1. 드라이버 검색
 		Class.forName("com.mysql.jdbc.Driver");
@@ -52,26 +54,22 @@
 		// 4. sql
 		result = pstmt.executeUpdate();
 		
-		if(result == 1){ // 
-			response.sendRedirect("../Login/login.jsp");
-		} 
-		else {
+		
+		if(result == 1){  
+	%>
+		<script>
+		alert("회원가입을 축하드립니다 !");
+		location.href= "../Login/login.jsp";
+		</script>	
+			
+		
+
+	<% } else {
+		%>		
 			response.sendRedirect("../Membership/membership.jsp");
+		<%
 		}
-		
-	} catch(Exception e){
-		e.printStackTrace();		
-		response.sendRedirect("../Membership/membership.jsp");
-		
-	} finally{
-		try{
-			if(conn != null) conn.close();
-			if(pstmt != null) pstmt.close();
-		} catch(Exception e){
-			e.printStackTrace();
-			out.println("드라이버 연결 실패");
-		}
-	}
+	 
 	%>
 </body>
 </html>

@@ -26,9 +26,9 @@
         <span>
 			<a href="../MyPage/loginSuccessMyPage.jsp"  style="position :relative; left:-3.2%;">
             마이페이지</a>
-        </span>	
+        </span>       	
         <span>
-            <a href="../Login/logout.jsp"  style="position :relative; left:-3.2%;">
+            <a href="../Logout/logout.jsp"  style="position :relative; left:-3.2%;">
             | 로그아웃</a>
         </span>
         </div>
@@ -50,7 +50,7 @@
             <span><h2><a href="../UpDate/upDate.jsp" style="color:black">회원 정보 수정</a></h2></span>
             </div>
             <div id="delete-user-information">
-            <span><h2>회원 탈퇴</h2></span>
+            <span><h2><a href="../DeleteUserInformation/deleteUserInformation.jsp" style="color:black">회원 탈퇴</h2></span>
             </div>
             <div id="reserve-user">
             <span> <h1>사용자 예약 관리</h1></span>           

@@ -31,7 +31,7 @@ request.setCharacterEncoding("UTF-8");
 	String sql = "update membership set pw = ?, name = ?, age = ?, address = ?, phone1 = ?, phone2 = ?, phone3 = ?, gender = ?"
 			   + "where id = ?";
 	
-	try{
+	
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/JejuTour?serverTimezone=UTC", "bonggyun", "12341234");
 		
@@ -48,23 +48,26 @@ request.setCharacterEncoding("UTF-8");
 		
 		int result = pstmt.executeUpdate();
 		if(result == 1){
+
+
 			session.setAttribute("user_name", name);
 			session.setAttribute("user_id", id);
-			response.sendRedirect("./update_success.jsp");
+			%>
+
+			<script>
+			alert("정보 수정을 성공 했습니다.");
+			location.href="../Login/login_welcome.jsp";
+			</script>
+
+		<%
 		} else{
-			response.sendRedirect("./update_fail.jsp");
+			%>
+			<script>
+		alert("정보 수정 실패");
+		history.go(-1);
+			</script>
+			<%
 		}
-	} catch(Exception e){
-		e.printStackTrace();
-		response.sendRedirect("./update_fail.jsp");
-	} finally{
-		try{
-			if(conn != null) conn.close();
-			if(pstmt != null) pstmt.close();
-		} catch(Exception e){
-			e.printStackTrace();
-		}
-	}
 	%>
 </body>
 </html>
