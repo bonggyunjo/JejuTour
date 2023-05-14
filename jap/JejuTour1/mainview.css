@@ -1,32 +1,29 @@
-.main-picture {
-  margin-bottom: 50px;
+/* .main-picture {
+  margin: auto;
+  margin-bottom: 20px;
   margin-top: 50px;
   text-align: center;
-  height: 70%;
-  overflow: hidden;
-  margin : auto;
-  z-index: -1
- 
-}
+} */
 
-img{
-  width:50%;
-  height:60%;
+
+.main-picture {
+  height: 800px;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .main-picture ul {
   width: calc(100% * 4);
   display: flex;
-  animation: slide 15s infinite;
-  margin-top: 2.5%;
+  animation: slide 10s infinite;
 }
 
 /* slide를 8초동안 진행하며 무한반복 함 */
 
 .main-picture li {
   width: calc(100% / 4);
-  height: 70%;
-  
+  height: 300px;
 }
 
 @keyframes slide {
@@ -61,7 +58,7 @@ img{
   80%{
     margin-left: -300%;
   }
-  90%{
+  85%{
     margin-left: -300%;
   }
 

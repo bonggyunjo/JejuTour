@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="basic.css">
 		<link rel="stylesheet" href="header.css">
-		<link rel="stylesheet" href="dropdown.css">
+		<link rel="stylesheet" href="menubar.css">
 		<link rel="stylesheet" href="mainview.css">
 		<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap"
 			rel="stylesheet">
@@ -21,64 +21,50 @@
 			<div class="header-align">
 				<div id="header-top">
 					<span>
-						<a href="../Login/login.jsp">
-							마이페이지 |
+						<a href="http://101.101.218.251:8080/JejuTour/mypage.jsp">
+							마이페이지
 						</a>
 						<span>
 							<span>
-								<a href="../Login/login.jsp">
+								<a href="http://101.101.218.251:8080/JejuTour/login/login.jsp">
 									로그인 |
 								</a>
 								<span>
-									<a href="../Membership/membership.jsp">
+									<a href="http://101.101.218.251:8080/JejuTour/membership/membership.jsp">
 										회원가입
 									</a>
 								</span>
 				</div>
 				<div id="header-mainname">
-					<h1><a href="../Main/main.jsp" style="color:#77c466;"> 제주어서옵세</a> </h1>
+					<h1><a href="http://101.101.218.251:8080/JejuTour/main.jsp" style="color:#77c466;"> 조봉균 반팔티 어디감?</a> </h1>
 				</div>
 
 			</div>
 		</header>
 		<nav id="menubar">
-			<ul class="menu">
-				<li>
-				  <a href="#">소개</a>
-				</li>
-				<li>
-				  <a href="#">숙박</a>
-				</li>
-				<li>
-				  <a href="#">이동 수단</a>
-				  <ul class="submenu2">
-					<li><a href="#">대중 교통</a></li>
-					<li><a href="#">렌트</a></li>
-				  </ul>
-				</li>
-				<li>
-				  <a href="#">추천 코스</a>
-				  <ul class="submenu3">
-					<li><a href="#">1인 여행</a></li>
-					<li><a href="#">커플 여행</a></li>
-					<li><a href="#">친구 여행</a></li>
-					<li><a href="#">가족 여행</a></li>
-				  </ul>
-				</li>
-				<li>
-				  <a href="#">게시판</a>
-				  
-				</li>
-			  </ul>
+			<ul id="nav-list">
+				<ul class="menu">
+					<li>
+						<a>메뉴</a>
+						<ul class="submenu">
+							<li><a href="http://101.101.218.251:8080/JejuTour/Introduce/Introduce.jsp">소개 </a></li>
+							<li><a href="Iodgment.jsp">숙박</a></li>
+							<li><a href="Transportation.jsp">이동수단</a></li>
+							<li><a href="Course.jsp">추천 코스</a></li>
+							<li><a href="NoticeBoard.jsp">게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
 		</nav>
 		<main>
 			<div class="main-cotainer">
 				<div class="main-picture">
 					<ul>
-						<li><img src="jejupic1.png" style=" width:50%; height:60%;"></li>
-						<li><img src="jejupic2.png" style=" width:50%; height:60%;"></li>
-						<li><img src="jejupic3.png" style=" width:50%; height:60%;"></li>
-						<li><img src="jejupic4.png" style=" width:50%; height:60%;"></li>
+						<li><img src="jejupic1.png"></li>
+						<li><img src="jejupic2.png"></li>
+						<li><img src="jejupic3.png"></li>
+						<li><img src="main.png"></li>
 					</ul>
 				</div>
 			</div>

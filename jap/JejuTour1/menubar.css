@@ -1,11 +1,10 @@
-
 li {
-  list-style: none;
+  list-style: none
 }
 
 ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1vw;
 }
 
 .menu {
@@ -24,7 +23,7 @@ ul li a {
   /*float: left;*/
   text-align: center;
   line-height: 45px;
-  background-color: rgb(221, 247, 25);
+  background-color: rgb(222, 250, 6);
 
 }
 
@@ -46,21 +45,21 @@ ul li a {
   border-radius: 2em;
 }
 
-
 .menu>li:hover {
   border-radius: 2em;
   transition-duration: 0.5s;
 }
 
 .menu>li:hover .submenu {
-  height: 550px;
+  height: 530px;
   /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
 
 #menubar {
-  position:fixed;
-  top: 7%;
-  left: 10%;
+  position: fixed;
+  top: 9.5%;
+  left: 100px;
   width: 100%;
+  z-index: 100;
 }

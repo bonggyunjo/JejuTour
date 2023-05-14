@@ -1,0 +1,83 @@
+*{padding:0;margin:0}
+li{list-style:none}
+
+.menu {
+ text-align: center;
+ width: 50%;
+  overflow: hidden;
+  margin: auto;
+  position: absolute
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;
+  margin: auto;
+  padding: auto;
+}
+
+.menu a {
+  color: #fff;
+line-height: 50px;
+
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+  
+}
+
+.submenu2 > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+  
+}
+
+.submenu3 > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+  
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  position: relative;
+  
+}
+.submenu2 {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+  position: relative;
+}
+.submenu3 {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+  position: relative;
+}
+
+
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;
+  
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+  
+}
+.menu > li:hover .submenu2 {
+  height: 100px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 0.6s;
+  
+}
+.menu > li:hover .submenu3 {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+  
+}
