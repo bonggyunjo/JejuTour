@@ -33,11 +33,13 @@
                                     </a>
                                 </span>
                 </div>
+
                 <span id="header-mainname" style="text-align: center;">
                     <h1>
                         <div style="color:#77c466;"> 제주 <span style="color:black;"> 소개
                     </h1>
                 </span>
+
             </div>
         </header>
     <div id="header" style="padding : 20px; width:80%; height:470px; border : 1px solid lightgray; margin:auto; border-radius:2em; ">
@@ -45,12 +47,12 @@
 
             <div class="kind_slider ">
                 <ul >
-                    <li><img src="jejuimage7.png" style="width:700px; height:470px;"></li>
-                    <li><img src="jejuimage5.png" style="width:700px; height:470px;"></li>
-                    <li><img src="jejuimage3.png" style="width:700px; height:470px;"></li>
-                    <li><img src="jejuimage4.png" style="width:700px; height:470px;"></li>
-                    <li><img src="jejuimage6.png" style="width:700px; height:470px;"></li>
-                    <li><img src="jejuimage7.png" style="width:700px; height:470px;"></li>
+                    <li><img src="jejuimage7.png" style="width:830px; height:470px;"></li>
+                    <li><img src="jejuimage5.png" style="width:830px; height:470px;"></li>
+                    <li><img src="jejuimage3.png" style="width:830px; height:470px;"></li>
+                    <li><img src="jejuimage4.png" style="width:830px; height:470px;"></li>
+                    <li><img src="jejuimage6.png" style="width:830px; height:470px;"></li>
+                    <li><img src="jejuimage7.png" style="width:830px; height:470px;"></li>
                 </ul>
             </div>
         </div>
@@ -93,6 +95,7 @@
                 하나입니다.         
             </div>
         </div>
+
 </main>
 
 
