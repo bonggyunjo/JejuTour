@@ -48,7 +48,7 @@
       
        
         <span>
-            <a href="../Logout/logout.jsp"  style="position :relative; left:-3.2%; top:6px;">
+            <a href="../Logout/logout.jsp"  style="position :relative; left:-3.2%; top:5px;">
              로그아웃</a>
         </span>
         </div>

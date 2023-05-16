@@ -7,21 +7,24 @@
   }
 
   .kind_wrap{
- border: 2px solid black;
- width: 100%;
- max-width: 45%;
- margin: 0 auto;
- position: relative;
- }
+    border: 1px solid light;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+   
+  }
 
   .kind_slider {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 8%;
+    margin-top: 8%; 
     text-align: center;
     height: 70%;
+    width:100%;
     overflow: hidden;
     margin : auto;
-    z-index: -1 
+    z-index: -1;
+ 
   }
   
 
@@ -30,6 +33,7 @@
     width: calc(100% * 4);
     display: flex;
     animation: slide 15s infinite;
+ 
   }
   
   /* slide를 8초동안 진행하며 무한반복 함 */
@@ -37,17 +41,20 @@
   .kind_slider li {
     width: calc(100% / 4);
     height: 70%;
+   
     
   }
   
   @keyframes slide {
     0% {
       margin-left: 0;
+    
     }
   
     /* 0 ~ 10  : 정지 */
     10% {
       margin-left: 0;
+   
     }
   
     /* 10 ~ 25 : 변이 */
@@ -72,6 +79,7 @@
     80%{
       margin-left: -300%;
     }
+
     90%{
       margin-left: -300%;
     }
@@ -79,6 +87,7 @@
     100% {
       margin-left: 0;
     }
+    
   }
 
   .header-align {
@@ -103,5 +112,26 @@
     font-size: 1.7em;
     color: #77c466;
   
-  
   }
+
+#header{
+    background : url("./image.1111.png");
+    background-size: 100%;
+    background-repeat:no-repeat;
+ 
+    margin:auto;
+  }
+
+#font-h1{
+  font-family: 'Cafe24Oneprettynight';
+    font-size: 3em;
+    color: black;
+   
+}
+
+body{
+  background : url("./image.1111.png");
+  background-size: 100%;
+
+  margin:auto;
+}
