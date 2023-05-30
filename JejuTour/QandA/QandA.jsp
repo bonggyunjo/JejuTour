@@ -60,7 +60,7 @@
         <div style=" position:relative; bottom:-40px;width:68%; height:500px; border-top:2px solid; border-radius:1em; margin:auto;">
         <h2 style="position:relative; bottom:-20px;"> 서울에서 제주도까지 시간이 얼마나 소요되나요 ? </h2>
         <pre style="position:relative; bottom:-20px; left:-4%; font-size:15px;">
-        작항 평균 비행 소요 시간은 1시간 10분으로, 제주도에 도착할 수 있습니다.
+        직항 평균 비행 소요 시간은 1시간 10분으로, 제주도에 도착할 수 있습니다.
         </pre>
         <h2 style="position:relative; bottom:-40px;"> 제주도의 날씨는 어때요 ?</h2>       
          <pre style="position:relative; bottom:-40px; left:-4%; font-size:15px;">

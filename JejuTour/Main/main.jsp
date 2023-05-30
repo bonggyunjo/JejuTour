@@ -6,10 +6,11 @@
 <style>
     body {
       background-image: url("../Introduce/image.1111.png");
-     
-      
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
     }
-  </style>
+  </style>s
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width" , initial-scale="1">
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -72,7 +73,7 @@
 				  </ul>
 				</li>
 				<li>
-				  <a href="../QandA/QandA.jsp">Q&A</a>
+				  <a href="../Login/login.jsp">Q&A</a>
 				  
 				</li>
 			  </ul>
