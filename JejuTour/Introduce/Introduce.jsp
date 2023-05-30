@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <!DOCTYPE html>
     <html lang="en">
-
+		<%
+	String id = (String)session.getAttribute("user_id");
+	String name = (String)session.getAttribute("user_name");
+%>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,33 +17,32 @@
     </head>
 
     <body link="gray" vlink="gray" alink="gray">
-        <header>
-            <div class="header-align">
-                <div id="header-top" style="float:right  position: relative; top:-0.5px; left:-70px; ">
-                    <span>
-                        <a href="../Login/login.jsp ">
-                            마이페이지 |
-                        </a>
-                        </span>
-                            <span>
-                                <a href="../Login/login.jsp">
-                                    로그인 |
-                                </a>
-                                </span>
-                                <span>
-                                    <a href="../Membership/membership.jsp">
-                                        회원가입
-                                    </a>
-                                </span>
-                </div>
+    	<header>
+	     <div class="header-align">
 
-                <span id="header-mainname" style="text-align: center;">
-                    <h1>
-                        <div style="color:#77c466;"> 제주 <span style="color:black;"> 소개
-                    </h1>
-                </span>
+        <div id ="header-top" style="	position: relative;top: 5px;	width:100%;" >		
 
-            </div>
+            <span style="float:left; position :relative; left:165px;" id="header-login-success-name" > <img src="../Login/login-image.png" style="width:40px;
+                height:40px; float:left; "> &nbsp;&nbsp;<span style="font-weight:bolder; position:relative;
+            top:10px; color:lightgray"><%= id%>(<%= name %>님) <span style="font-size:15px;">안녕하세요!</span></span> </span>
+      
+	   <span>
+            <a href="../Logout/logout.jsp" style="float:right; position :relative; left:-2.65%;">
+            | 로그아웃 </a>
+        </span>
+
+        <span>
+			<a href="../MyPage/loginSuccessMyPage.jsp" style="float:right; position :relative; left:-2.65%;">
+           마이페이지&nbsp </a>
+        </span>	
+       
+        </div>
+        
+        <div id="header-mainname">
+            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none; ">제주<span style="color:black;">어서옵세</span>  </a></h1>
+        </div>
+        
+        </div>
         </header>
     <div id="header" style="padding : 20px; width:80%; height:470px; border : 1px solid lightgray; margin:auto; border-radius:2em; ">
         <div class="kind_wrap">

@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="loginbasic.css">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet" >
+
 <title>로그인</title>
 </head>
 <body link="gray" vlink="gray" alink="gray">
@@ -52,7 +53,7 @@
         </div>
         
         <div id="header-mainname">
-            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a></h1>
+            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;">  제주<span style="color:black;">어서옵세</span>  </a></h1>
         </div>
         
         </div>
@@ -69,11 +70,11 @@
 		비밀번호 : <input type="password" name="pw" id="pw" style="border: 2px solid darkgray;"> <br/>
         </div>  
         <div id="button-going">
-				<input type="submit" value="로그인" onclick="check()" style="height: 45px; width: 20%; float: left; right:-6%; position: relative;
-                background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray;  ">
+				<input type="submit" value="로그인" onclick="check()" style="height: 50px; width: 18.5%; float: left; right:-6%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray; font-weight:bolder; ">
 
-                <button style="height : 45px; width: 20%; float: left; right:-17%; position: relative;
-                background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray;">
+                <button style="height : 50px; width: 18.5%; float: left; right:-17%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray; font-weight:bolder;">
 
                     <a href="../Membership/membership.jsp" style="color: black; 
                     text-decoration: none;">회원가입</a></button>

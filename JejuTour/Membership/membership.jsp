@@ -65,7 +65,7 @@
         </div>
         
         <div id="header-mainname">
-            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a>  </h1>
+            <h1><a href="../Main/main.jsp" style="color:#77c466; text-decoration: none;"> 제주<span style="color:black;">어서옵세</span>  </a>  </h1>
         </div>
         
         </div>
@@ -80,7 +80,7 @@
         
 	<div class="input-id">
         
-		아아디: <input type="text" name="id" onkeydown="inputIdChk()" id="id" style=" height:25px; width:25%; left:1.8%; position: relative; border: 1px solid darkgray;" />
+		아아디: <input type="text" name="id" onkeydown="inputIdChk()" id="id" style="  height:27px; width:25%; left:1.8%; position: relative; border: 2px solid darkgray;" />
 		<input type="button" onclick="openIdChk()" value="중복확인" style="left:4%; position: relative;
         background-color: lightgray; border-radius: 1em; border-color: black; height: 35px; width:10%; color:black; margin: auto;
         border: 2px solid darkgray; font-weight: bolder; ">
@@ -88,17 +88,17 @@
 		 	</div>
 		 	
         <div class="input-pw">
-		비밀번호:  <input type="password" name="pw" id="pw" style=" height:25px; width:25%; left:2.1%; position: relative; border: 1px solid darkgray; ">
+		비밀번호:  <input type="password" name="pw" id="pw" style=" height:27px; width:25%; left:2.1%; position: relative; border: 2px solid darkgray; ">
         </div>
 
         <div class="input-name">
-		이름:  <input type="text" name="name" id="name" style=" height:25px; width:25%; left:1.9%;position: relative; border: 1px solid darkgray;">
+		이름:  <input type="text" name="name" id="name" style=" height:27px; width:25%; left:1.9%;position: relative; border: 2px solid darkgray;">
         </div>
         <div class="input-age">
-        나이:  <input type="text" name="age" id="age" style=" height:25px; width:6%; left:1.8%;position: relative; border: 1px solid darkgray; ">
+        나이:  <input type="text" name="age" id="age" style=" height:27px; width:6%; left:1.8%;position: relative; border: 2px solid darkgray; ">
         </div>
         <div class="input-address">
-        주소:  <input type="text" name="address" id="address" style=" height:25px; width:25%; left:2%;position: relative; border: 1px solid darkgray;">
+        주소:  <input type="text" name="address" id="address" style=" height:27px; width:25%; left:2%;position: relative; border: 2px solid darkgray;">
         </div>
 
         <div class="input-phone">
@@ -110,8 +110,8 @@
 			<option>031</option>
 			<option>051</option>		
 		</select>
-		- <input type="text" name="phone2" id="phone2" size="5"style="width:10%; height:25px; border: 1px solid darkgray;" >
-		- <input type="text" name="phone3" id="phone3" size="5"style="width:10%; height:25px; border: 1px solid darkgray;" >
+		- <input type="text" name="phone2" id="phone2" size="5"style="width:10%; height:27px; border: 2px solid darkgray;" >
+		- <input type="text" name="phone3" id="phone3" size="5"style="width:10%; height:27px; border: 2px solid darkgray;" >
     </span>
 </div>
         <div class="input-gender">
@@ -120,8 +120,8 @@
         </div>
 
         <div class="button-submit">
-		<input type="submit" value="가입" onclick="check()" style="width:16%; height:55px; background-color: lightgray; border-radius: 1em; border-color: black; color:black;
-        border: 2px solid darkgray; font-weight: bolder;">
+		<input type="submit" value="가입하기" onclick="check()" style="width:16%; height:55px; background-color: lightgray; border-radius: 1em; border-color: black; color:black;
+        border: 2px solid darkgray; font-weight: bolder; font-size:15px;">
         </div>		
 		</form>
 		

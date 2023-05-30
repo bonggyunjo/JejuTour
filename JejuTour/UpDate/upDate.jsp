@@ -70,7 +70,7 @@
         </div>
         
         <div id="header-mainname">
-            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none;"> 제주어서옵세 </a></h1>
+            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none;"> 제주<span style="color:black;">어서옵세</span>  </a></h1>
         </div>
         
         </div>

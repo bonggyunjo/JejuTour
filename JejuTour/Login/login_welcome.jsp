@@ -3,11 +3,17 @@
 		<%
 	String id = (String)session.getAttribute("user_id");
 	String name = (String)session.getAttribute("user_name");
-%>
+        %>
 	<html>
 
 	<head>
-
+	<style>
+body {
+      background-image: url("../Introduce/image.1111.png");
+     
+      
+    }
+	</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width" , initial-scale="1">
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -43,7 +49,7 @@
         </div>
         
         <div id="header-mainname">
-            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none; "> 제주어서옵세 </a></h1>
+            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none; "> 제주<span style="color:black;">어서옵세</span>  </a></h1>
         </div>
         
         </div>
@@ -54,26 +60,26 @@
 				  <a href="../Introduce/Introduce.jsp">소개</a>
 				</li>
 				<li>
-				  <a href="#">숙박</a>
+				  <a href="../Lodgment/Lodgment.jsp">숙박</a>
 				</li>
 				<li>
 				  <a href="#">이동 수단</a>
 				  <ul class="submenu2">
-					<li><a href="#">대중 교통</a></li>
-					<li><a href="#">렌트</a></li>
+					<li><a href="../Transportation/PublicTransport.jsp">대중 교통</a></li>
+					<li><a href="../Transportation/RentalCar.jsp">렌트</a></li>
 				  </ul>
 				</li>
 				<li>
 				  <a href="#">추천 코스</a>
 				  <ul class="submenu3">
-					<li><a href="#">1인 여행</a></li>
-					<li><a href="#">커플 여행</a></li>
-					<li><a href="#">친구 여행</a></li>
-					<li><a href="#">가족 여행</a></li>
+					<li><a href="../Course/IndividualCourse.jsp">1인 여행</a></li>
+					<li><a href="../Course/CoupleCourse.jsp">커플 여행</a></li>
+					<li><a href="../Course/FriendCourse.jsp">친구 여행</a></li>
+					<li><a href="../Course/FamilyCourse.jsp">가족 여행</a></li>
 				  </ul>
 				</li>
 				<li>
-				  <a href="#">게시판</a>
+				  <a href="../QandA/QandA.jsp">Q&A</a>
 				  
 				</li>
 			  </ul>
@@ -83,9 +89,9 @@
 				<div class="main-picture">
 					<ul>
 						<li><img src="../Main/jejupic1.png" style=" width:50%; height:60%;"></li>
-						<li><img src="../Main/jejupic2.png" style=" width:50%; height:60%;"></li>
-						<li><img src="../Main/jejupic3.png" style=" width:50%; height:60%;"></li>
 						<li><img src="../Main/jejupic4.png" style=" width:50%; height:60%;"></li>
+						<li><img src="../Main/jejupic2.png" style=" width:50%; height:60%;"></li>
+						<li><img src="../Main/jejupic3.png" style=" width:50%; height:60%;"></li>						
 					</ul>
 				</div>
 			</div>
@@ -93,7 +99,8 @@
 		<footer>
 			<div id="footer-tel">
 				<span>
-					<h4>TEL : 010 - 0000 - 0000 </h4>
+					<h4 style="color:black;">TEL : 010 - 2531 - 5383 </h4>
+					<h4 style="color:black;">If you have any suggestions, please call this number</h4>
 				</span>
 			</div>
 		</footer>
