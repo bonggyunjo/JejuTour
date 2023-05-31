@@ -75,6 +75,7 @@
         <div id="main-align">
 
 	<h2>회원가입</h2>
+           <img src="../Membership/membership.png" style="width:110px; height:85px;">
 	<form action="../Membership/join_ok.jsp" name="frm" method="post" onsubmit="return joinCheck(this)">
 
         

@@ -79,6 +79,7 @@
             <div id="main-align">
             <div id="title">
                <span><h1> 회원 정보 수정 </h1></span>
+                       <span style="position:relative; left:16%; bottom:50px;"><img src="../UpDate/Update.png" style="width:120px; height:65px;"></span>
             </div>
 
             <div id="update-information-textfield" style="font-weight: bolder;">

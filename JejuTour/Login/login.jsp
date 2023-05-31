@@ -61,6 +61,7 @@
     <main>
         <div id="main-align">
         <h1>로그인</h1>
+                <img src="../Login/login.png" style="width:100px; height:65px;">
         <div >
 	<form action="./login_ok.jsp" method="post" name="frm">
         <div id="id-align">

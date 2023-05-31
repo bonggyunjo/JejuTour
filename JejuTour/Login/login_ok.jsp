@@ -43,9 +43,23 @@ Class.forName("com.mysql.jdbc.Driver");
 				
 			id = rs.getString("id");
 			String name = rs.getString("name");
-		
+			String age = rs.getString("age");
+			String phone1 = rs.getString("phone1");	
+			String phone2 = rs.getString("phone2");
+			String phone3 = rs.getString("phone3");
+            String address = rs.getString("address");
+           String gender = rs.getString("gender");
+
+
+
 			session.setAttribute("user_id", id);
 			session.setAttribute("user_name", name);
+			session.setAttribute("user_age", age);
+session.setAttribute("user_phone1", phone1);
+session.setAttribute("user_phone2", phone2);
+session.setAttribute("user_phone3", phone3);
+session.setAttribute("user_address", address);
+session.setAttribute("user_gender", gender);
 			
 			%>
 
