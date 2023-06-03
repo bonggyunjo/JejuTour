@@ -61,20 +61,20 @@
     <main>
         <div id="main-align">
         <h1>로그인</h1>
-                <img src="../Login/login.png" style="width:100px; height:65px;">
+                <img src="../Login/login.png" style="width:90px; height:65px;">
         <div >
 	<form action="./login_ok.jsp" method="post" name="frm">
         <div id="id-align">
-		아이디 : <input type="text" name="id" id="id" style="border: 2px solid darkgray;"><br/>
+		아이디 : <input type="text" name="id" id="id" placeholder="Username"  style="  height:35px; width:26%; border: 2px solid lightgray;"><br/>
         </div>
         <div id="pw-align">
-		비밀번호 : <input type="password" name="pw" id="pw" style="border: 2px solid darkgray;"> <br/>
+		비밀번호 : <input type="password" name="pw" placeholder="Password" id="pw" style=" height:35px; width:26%; border: 2px solid lightgray;"> <br/>
         </div>  
         <div id="button-going">
-				<input type="submit" value="로그인" onclick="check()" style="height: 50px; width: 18.5%; float: left; right:-6%; position: relative;
+				<input type="submit" value="로그인" onclick="check()" style="height: 60px; width: 17.5%; float: left; right:-6%; position: relative;
                 background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray; font-weight:bolder; ">
 
-                <button style="height : 50px; width: 18.5%; float: left; right:-17%; position: relative;
+                <button style="height : 60px; width: 17.5%; float: left; right:-17%; position: relative;
                 background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray; font-weight:bolder;">
 
                     <a href="../Membership/membership.jsp" style="color: black; 

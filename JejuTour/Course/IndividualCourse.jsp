@@ -149,7 +149,7 @@
 
             <span style="float:left; position :relative; left:165px;" id="header-login-success-name" > <img src="../Login/login-image.png" style="width:40px;
                 height:40px; float:left; "> &nbsp;&nbsp;<span style="font-weight:bolder; position:relative;
-            top:10px; color:lightgray"><%= id%>(<%= name %>님) <span style="font-size:15px;">안녕하세요!</span></span> </span>
+            top:10px; color:lightgray"><%= id%>(<%= name %>님) <span style="font-size:15px;">반갑수다</span></span> </span>
       
 	   <span>
             <a href="../Logout/logout.jsp" style="float:right; position :relative; left:-2.65%;">

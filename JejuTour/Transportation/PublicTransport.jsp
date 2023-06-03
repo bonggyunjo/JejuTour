@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="../Main/mainview.css">
 		<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap"
 			rel="stylesheet">
-		<title>1인 여행 추천 코스</title>
+		<title>대중 교통 시스템</title>
 </head>
 <body link="gray" vlink="gray" alink="gray">
 	대중교통

@@ -64,7 +64,7 @@ session.setAttribute("user_gender", gender);
 			%>
 
 		<script>
-		alert("로그인 성공");
+		
 		location.href="../Login/login_welcome.jsp";	
 		</script>
 

@@ -2,19 +2,15 @@
 <%@ page import= "java.sql.*" %>
 <%@ page import="javax.servlet.http.HttpSession" %>
 
-
-<%
-	String id = (String)session.getAttribute("user_id");
-	String name = (String)session.getAttribute("user_name");
-    	String age = (String)session.getAttribute("user_age");
-	String phone1 = (String)session.getAttribute("user_phone1");
-    String phone2 = (String)session.getAttribute("user_phone2");
-    String phone3 = (String)session.getAttribute("user_phone3");
-    	String address = (String)session.getAttribute("user_address");
-	String gender = (String)session.getAttribute("user_gender");
-    
+     <%
+    String id = (String) session.getAttribute("user_id");
+    String name = (String) session.getAttribute("user_name");
+    String hotel  = (String) session.getAttribute("hotel");
+    String date = (String) session.getAttribute("date");
+    String man = (String) session.getAttribute("man");
+    String price = (String) session.getAttribute("price");
+   
 %>
-
 <!DOCTYPE html>
 <html lang="en">
     
@@ -25,9 +21,11 @@
     <link rel="stylesheet" href="SuccessMypage.css">  
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+    <title>숙박 예약 확인</title>
 </head>
 <body link="gray" vlink="gray" alink="gray">
+
     <header>
         <div class="header-align">
         <div id ="header-top" >		
@@ -53,16 +51,18 @@
         </header>
         <main>
         <div>
-        <h1 style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px;">내 정보</h1>
-        <span style="position:relative; left:55%; bottom:30px;"><img src="../MyPage/MyInformation.png" style="width:120px; height:65px;"></span>
+        <h1 style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px;">예약 확인</h1>
+        <span style="position:relative; left:55%; bottom:30px;"><img src="../MyPage/MyInformation.png" style="width:100px; height:65px;"></span>
         </div>
-        <div style="width:30%; height:400px; border:2px solid black; border-radius:1em; margin:auto; padding:20px;">
-        <div style="width:100%: margin:auto; padding:13px; " ><h2 >아이디 : <%= id %></h2> </div>
+        <div style="width:30%; height:500px; border:2px solid black; border-radius:1em; margin:auto; padding:20px;">
+
+           <div style="width:100%: margin:auto; padding:13px; " ><h2 >아이디 : <%= id %></h2> </div>
        <div style=" width:100%: margin:auto; padding:13px; "><h2 >이름 : <%= name %></h2> </div>
-       <div style=" width:100%: margin:auto; padding:13px;"><h2 >나이 :<%= age %> </h2> </div>
-     <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >휴대폰 번호 : <%= phone1 %> - <%= phone2 %> - <%= phone3 %></h2>  </div>
-     <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >주소 : <%= address %> </h2> </div>
-     <div style=" width:100%: margin:auto;  padding:13px; "><h2 >성별 : <%= gender %> </h2>  </div>
+        <div style=" width:100%: margin:auto; padding:13px;"><h2 >모델 : <%= hotel %> </h2> </div>
+        <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >차종 : <%= date %> </h2>  </div>  
+            <div style=" width:100%: margin:auto; padding:13px;"><h2 >모델 : <%= man %> </h2> </div>
+     <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >차종 : <%= price %> </h2>  </div>
+   
         </div>
         
         </main>
