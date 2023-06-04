@@ -4,6 +4,13 @@
 <%
 	String id = (String)session.getAttribute("user_id");
 	String name = (String)session.getAttribute("user_name");
+       	String age = (String)session.getAttribute("user_age");
+	String phone1 = (String)session.getAttribute("user_phone1");
+    String phone2 = (String)session.getAttribute("user_phone2");
+    String phone3 = (String)session.getAttribute("user_phone3");
+    	String address = (String)session.getAttribute("user_address");
+	String gender = (String)session.getAttribute("user_gender");
+
 %>
 
 
@@ -118,8 +125,8 @@
 </div>
         <div class="input-gender">
          
-                <input type="radio" name="gender" value="m" checked>남자
-                <input type="radio" name="gender" value="f">여자
+                <input type="radio" name="gender" value="man" checked>남자
+                <input type="radio" name="gender" value="female">여자
           
         </div>
 

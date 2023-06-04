@@ -52,11 +52,20 @@ request.setCharacterEncoding("UTF-8");
 
 			session.setAttribute("user_name", name);
 			session.setAttribute("user_id", id);
+				
+	session.setAttribute("user_name",name);
+       session.setAttribute("user_age",age);
+session.setAttribute("user_phone1",phone1);
+   session.setAttribute("user_phone2",phone2);
+    session.setAttribute("user_phone3",phone3);
+    	session.setAttribute("user_address",address);
+	session.setAttribute("user_gender",gender);
 			%>
 
 			<script>
 			alert("정보 수정을 성공 했습니다.");
 			location.href="../Login/login_welcome.jsp";
+				response.sendRedirect("../UpDate/upDate.jsp");
 			</script>
 
 		<%

@@ -3,6 +3,14 @@
 	String id = (String)session.getAttribute("user_id");
 	String name = (String)session.getAttribute("user_name");
 %>
+<style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
 <!DOCTYPE html>
 <html lang="en">
     

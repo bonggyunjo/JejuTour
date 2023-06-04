@@ -63,7 +63,7 @@
         <div style="width:80%; height:500px; margin: auto;"> 
     <div style="text-align:center; position:relative; top : 32px; width:100%; border-bottom : 1px solid lightgray"> 
     <h1 style="font-size:35px; padding:20px;">회원 탈퇴</h1> </div> 
-           <span style="position:relative; left:58%; bottom:40px;"><img src="../DeleteUserInformation/delete.png" style="width:120px; height:65px;"></span>
+           <span style="position:relative; left:58%; bottom:40px;"><img src="../DeleteUserInformation/delete.png" style="width:100px; height:60px;"></span>
     <div style="margin : auto; width:100%; padding:150px;">
 
     <form name="deleteform" method="post" action="../DeleteUserInformation/delete_ok.jsp"

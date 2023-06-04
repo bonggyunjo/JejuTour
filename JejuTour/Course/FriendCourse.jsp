@@ -1,10 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="utf-8"  %>
 <%@ page import= "java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-		<%
-	String id = (String)session.getAttribute("user_id");
-	String name = (String)session.getAttribute("user_name");
-%>
 
 
 <head>
@@ -158,9 +154,7 @@
 
         <div id ="header-top" style="	position: relative;top: 5px;	width:100%;" >		
 
-            <span style="float:left; position :relative; left:165px;" id="header-login-success-name" > <img src="../Login/login-image.png" style="width:40px;
-                height:40px; float:left; "> &nbsp;&nbsp;<span style="font-weight:bolder; position:relative;
-            top:10px; color:lightgray"><%= id%>(<%= name %>님) <span style="font-size:15px;">반갑수다</span></span> </span>
+          
       
 	   <span>
             <a href="../Logout/logout.jsp" style="float:right; position :relative; left:-2.65%;">

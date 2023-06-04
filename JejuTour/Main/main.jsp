@@ -51,7 +51,7 @@
 		<nav id="menubar">
 			<ul class="menu">
 				<li>
-				  <a href="../Login/login.jsp">소개</a>
+				  <a href="../Introduce/Introduce.jsp">소개</a>
 				</li>
 				<li>
 				  <a href="../Login/login.jsp">숙박</a>
@@ -66,14 +66,14 @@
 				<li>
 				  <a href="#">추천 코스</a>
 				  <ul class="submenu3">
-						<li><a href="../Login/login.jsp">혼자 왔수</a></li>
+						<li><a href="../Course/IndividualCourse.jsp">혼자 왔수</a></li>
 					<li><a href="../Course/CoupleCourse.jsp">커플 왔수</a></li>
 					<li><a href="../Course/FriendCourse.jsp">친구 왔수</a></li>
 					<li><a href="../Course/FamilyCourse.jsp">가족 왔수</a></li>
 				  </ul>
 				</li>
 				<li>
-				  <a href="../Login/login.jsp">Q&A</a>
+				  <a href="../QandA/QandA.jsp">Q&A</a>
 				  
 				</li>
 			  </ul>

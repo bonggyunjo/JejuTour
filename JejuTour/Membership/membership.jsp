@@ -2,7 +2,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <script>
+    
+     <script>
+        function openIdChk() {
+            var id = document.getElementById("id").value;
+
+            if (id === "") {
+                alert("아이디를 입력하세요.");
+                return;
+            }
+
+            // AJAX를 사용하여 서버에 아이디 중복 확인 요청
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "../Membership/checkid.jsp", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+                    if (response === "duplicate") {
+                        alert("중복 확인에 실패했습니다.");
+                    } else if (response === "available") {
+                        alert("중복된 아이디가 있습니다.");
+                    } else {
+                        alert("사용 가능한 아이디입니다.");
+                    }
+                }
+            };
+            xhr.send("id=" + id);
+        }
+
+        function joinCheck(form) {
+            // 회원가입 유효성 검사 로직 추가...
+            // 필요한 유효성 검사가 있으면 구현하세요.
+
+            // 모든 유효성 검사를 통과한 경우 true 반환하여 폼 제출
+            return true;
+        }
+    </script>
+
+<script>
         function check(){
            
             if(document.getElementById("id").value==""){
@@ -111,8 +149,8 @@
 			<option>031</option>
 			<option>051</option>		
 		</select>
-		- <input type="text" name="phone2" id="phone2" size="5"style="width:12%; height:35px; border: 2px solid darkgray;"  required>
-		- <input type="text" name="phone3" id="phone3" size="5"style="width:12%; height:35px; border: 2px solid darkgray;" required >
+		- <input type="text" name="phone2" id="phone2" size="5"style="width:12%;  height:35px; border: 2px solid darkgray;" maxlength="4" required>
+		- <input type="text" name="phone3" id="phone3" size="5"style="width:12%; height:35px; border: 2px solid darkgray;"maxlength="4" required >
     </span>
 </div>
         <div class="input-gender">
