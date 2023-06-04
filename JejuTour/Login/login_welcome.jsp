@@ -33,7 +33,7 @@ body {
 		<header>
 	     <div class="header-align">
 
-        <div id ="header-top" style="	position: relative;top: 5px;	width:100%;" >		
+        <div id ="header-top" style="position: relative;top: 5px;	width:100%;" >		
 
             <span style="float:left; position :relative; left:165px;" id="header-login-success-name" > <img src="login-image.png" style="width:40px;
                 height:40px; float:left; "> &nbsp;&nbsp;<span style="font-weight:bolder; position:relative;
@@ -53,8 +53,7 @@ body {
         
         <div id="header-mainname">
             <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none; "> 제주<span style="color:black;">어서옵세</span>  </a></h1>
-        </div>
-        
+        </div>        
         </div>
 		
 		<nav id="menubar">
@@ -68,7 +67,7 @@ body {
 				<li>
 				  <a href="#">이동 수단</a>
 				  <ul class="submenu2">
-					<li><a href="../Transportation/PublicTransport.jsp">대중 교통</a></li>
+					<li><a href="../SearchBus/SearchBus.jsp">대중 교통</a></li>d
 					<li><a href="../Transportation/RentalCar.jsp">렌트</a></li>
 				  </ul>
 				</li>
