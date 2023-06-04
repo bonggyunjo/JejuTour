@@ -42,16 +42,17 @@ Class.forName("com.mysql.jdbc.Driver");
 		if(rs.next()){ // 로그인 성공(인증의 수단 session)
 				
 			id = rs.getString("id");
+			 pw = rs.getString("pw");
 			String name = rs.getString("name");
 			String age = rs.getString("age");
 			String phone1 = rs.getString("phone1");	
 			String phone2 = rs.getString("phone2");
 			String phone3 = rs.getString("phone3");
             String address = rs.getString("address");
-           String gender = rs.getString("gender");
+          	 String gender = rs.getString("gender");
 
 
-
+			session.setAttribute("user_pw", pw);
 			session.setAttribute("user_id", id);
 			session.setAttribute("user_name", name);
 			session.setAttribute("user_age", age);
@@ -64,7 +65,7 @@ session.setAttribute("user_gender", gender);
 			%>
 
 		<script>
-		
+		alert("로그인 성공");
 		location.href="../Login/login_welcome.jsp";	
 		</script>
 

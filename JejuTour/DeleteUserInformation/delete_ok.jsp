@@ -5,7 +5,7 @@
     pageEncoding="UTF-8"%>
 	<%
 	String id = (String)session.getAttribute("user_id");
-	String name = (String)session.getAttribute("user_name");
+	String pw = (String)session.getAttribute("user_pw");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -15,15 +15,14 @@
 </head>
 <body>
 	<%
-    String pw = request.getParameter("password");
-	
+
 	String url = "jdbc:mysql://localhost:3306/JejuTour";
 	String uid ="bonggyun";
 	String upw ="12341234";
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
-	String sql = "delete from membership where pw=?";
+	String sql = "delete from membership where pw=? AND id=?";
 	
 
 		Class.forName("com.mysql.jdbc.Driver");
@@ -32,6 +31,8 @@
 		// pstmt 생성
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, pw);
+		pstmt.setString(2, id);
+
 		
 		int result = pstmt.executeUpdate();
 		

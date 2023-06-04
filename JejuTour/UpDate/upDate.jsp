@@ -87,33 +87,33 @@
                 <form action="../UpDate/update_ok.jsp" method="post" name="frm" onsubmit="return joinCheck(this)" >
                        
 	        <div class="input-id">
-              아이디 확인 : <input type="text" name="id" id="id"  style=" height:33px; width:22%;"><br/>
+              아이디 확인 : <input type="text" name="id" id="id"  style=" height:33px; width:22%;" required><br/>
             </div>
         <div class="input-pw">
-           새로운 비밀번호 : <input type="password" name="pw" id="pw" style="height:33px; width:22%;" >
+           새로운 비밀번호 : <input type="password" name="pw" id="pw" style="height:33px; width:22%;" required >
         </div>
 
         <div class="input-name">
-		이름 :  <input type="text" name="name" id="name" style="height:33px; width:22%;" >
+		이름 :  <input type="text" name="name" id="name" style="height:33px; width:22%;" required >
         </div>
         <div class="input-age">
-        나이 :  <input type="text" name="age" id="age"  style="height:33px; width:22%;" >
+        나이 :  <input type="text" name="age" id="age"  style="height:33px; width:22%;" required>
         </div>
         <div class="input-address">
-        주소 :  <input type="text" name="address" id="address"  style="height:33px; width:22%;" >
+        주소 :  <input type="text" name="address" id="address"  style="height:33px; width:22%;"required >
         </div>
 
         <div class="input-phone">
         		전화번호 :
                 <span >
-		<select name="phone1" style="height:33px; width:5%;" >
+		<select name="phone1" style="height:33px; width:5%;" required>
             <option > 010</option>
 			<option> 02</option>
 			<option > 031</option>
 			<option > 051</option>		
 		</select>
-		- <input type="text" name="phone2" id="phone2"   size="5"style="height:33px; width:7%;" >
-		- <input type="text" name="phone3" id="phone3"   size="5"style="height:33px; width:7%;" >
+		- <input type="text" name="phone2" id="phone2"   size="5"style="height:33px; width:7%;" required>
+		- <input type="text" name="phone3" id="phone3"   size="5"style="height:33px; width:7%;" required>
     </span>
 </div>
         <div class="input-gender">

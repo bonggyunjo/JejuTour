@@ -16,9 +16,7 @@
                 alert("비밀번호를 입력하세요");
                 return;
             }
-           
-        
-           
+         
             frm.submit(); //직접 submit()이라는 메소드를 호출. 액션을 들고 가줌
         }
         </script>

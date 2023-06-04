@@ -63,6 +63,7 @@
     <main>
         <div id="main-align">
         <h1>로그인</h1>
+          <img src="../Login/login.png" style="width:90px; height:65px;">
         <div >
 	<form action="./login_ok.jsp" method="post" name="frm">
         <div id="id-align">
@@ -72,11 +73,11 @@
 		비밀번호 : <input type="password" name="pw" id="pw" style="border: 2px solid darkgray;"> <br/>
         </div>  
         <div id="button-going">
-				<input type="submit" value="로그인" onclick="check()" style="height: 45px; width: 20%; float: left; right:-6%; position: relative;
-                background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray;  ">
+				<input type="submit" value="로그인" onclick="check()" style="height: 60px; width: 17.5%; float: left; right:-6%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black;  border: 2px solid darkgray; font-weight:bolder; ">
 
-                <button style="height : 45px; width: 20%; float: left; right:-17%; position: relative;
-                background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray;">
+                <button style="height : 60px; width: 17.5%; float: left; right:-17%; position: relative;
+                background-color: lightgray; border-radius: 1em; border-color: black; border: 2px solid darkgray; font-weight:bolder;">
 
                     <a href="../Membership/membership.jsp" style="color: black; 
                     text-decoration: none;">회원가입</a></button>

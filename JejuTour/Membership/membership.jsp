@@ -81,7 +81,7 @@
         
 	<div class="input-id">
         
-		아이디: <input type="text" name="id" onkeydown="inputIdChk()" id="id" style="  height:35px; width:27%; left:1.8%; position: relative; border: 2px solid darkgray;" />
+		아이디: <input type="text" name="id" onkeydown="inputIdChk()" id="id" style="  height:35px; width:27%; left:1.8%; position: relative; border: 2px solid darkgray;" required>
 		<input type="button" onclick="openIdChk()" value="중복확인" style="left:4%; position: relative;
         background-color: lightgray; border-radius: 1em; border-color: black; height: 40px; width:10%; color:black; margin: auto;
         border: 2px solid darkgray; font-weight: bolder; ">
@@ -89,17 +89,17 @@
 		 	</div>
 		 	
         <div class="input-pw">
-		비밀번호:  <input type="password" name="pw" id="pw" style=" height:35px; width:27%; left:2.1%; position: relative; border: 2px solid darkgray; ">
+		비밀번호:  <input type="password" name="pw" id="pw" style=" height:35px; width:27%; left:2.1%; position: relative; border: 2px solid darkgray; " required>
         </div>
 
         <div class="input-name">
-		이름:  <input type="text" name="name" id="name" style=" height:35px; width:27%; left:1.9%;position: relative; border: 2px solid darkgray;">
+		이름:  <input type="text" name="name" id="name" style=" height:35px; width:27%; left:1.9%;position: relative; border: 2px solid darkgray;" required>
         </div>
         <div class="input-age">
-        나이:  <input type="text" name="age" id="age" style=" height:35px; width:8%; left:1.8%;position: relative; border: 2px solid darkgray; ">
+        나이:  <input type="text" name="age" id="age" style=" height:35px; width:8%; left:1.8%;position: relative; border: 2px solid darkgray; " required>
         </div>
         <div class="input-address">
-        주소:  <input type="text" name="address" id="address" style=" height:35px; width:27%; left:2%;position: relative; border: 2px solid darkgray;">
+        주소:  <input type="text" name="address" id="address" style=" height:35px; width:27%; left:2%;position: relative; border: 2px solid darkgray;" required>
         </div>
 
         <div class="input-phone">
@@ -111,13 +111,13 @@
 			<option>031</option>
 			<option>051</option>		
 		</select>
-		- <input type="text" name="phone2" id="phone2" size="5"style="width:12%; height:35px; border: 2px solid darkgray;" >
-		- <input type="text" name="phone3" id="phone3" size="5"style="width:12%; height:35px; border: 2px solid darkgray;" >
+		- <input type="text" name="phone2" id="phone2" size="5"style="width:12%; height:35px; border: 2px solid darkgray;"  required>
+		- <input type="text" name="phone3" id="phone3" size="5"style="width:12%; height:35px; border: 2px solid darkgray;" required >
     </span>
 </div>
         <div class="input-gender">
-		<input type="radio" name="gender"  value="m" checked>  남자
-		<input type="radio" name="gender" value="f">  여자
+		<input type="radio" name="gender"  value="man" checked>  남자
+		<input type="radio" name="gender" value="female">  여자
         </div>
 
         <div class="button-submit">

@@ -59,8 +59,7 @@
 	</header>
     
     <main>
-    <img src="../Transportation/car.png" style="width:120px; height:75px; position:relative; left:8%; bottom:-70px;">
-    <img src="../Transportation/car1.png" style="width:120px; height:75px; position:relative; left:-8%;">
+      <img id="car-image" style="width: 200px; height: 125px; margin-top: 20px;">
 
 
         <form action="../Transportation/RentalCarjoin.jsp">
@@ -68,7 +67,7 @@
     <div style="  width:80%; height:200px; position:relative; bottom:-20px; margin:auto;">
        
         <div style="text-align:center; margin:auto; width:100%; padding:15px;">
-    <span> <select name="carType"  style="width:14%; height:40px; position:relative; bottom:-40px; " onchange="updatecarTypeOptions()">
+    <span> <select name="carType"  style="width:14%; height:40px; position:relative; bottom:-40px; " onchange="updatecarTypeOptions()" required>
 		<option value="SUV">SUV</option>
 		<option value="세단">세단</option>
 		<option value="쿠페">쿠페</option>
@@ -80,7 +79,7 @@
 </div>
 
 <div style="text-align:center; margin:auto; width:100%; padding : 15px; ">
-    <span> <select name="year"  style="width:14%; height:40px; position:relative; bottom:-40px; l" onchange="updateyearOptions()" >
+    <span> <select name="year"  style="width:14%; height:40px; position:relative; bottom:-40px; l" onchange="updateImageSource()" required>
 	</select>   
     </span>
 </div>
@@ -120,132 +119,140 @@ function updatecarTypeOptions() {
 		yearSelect.innerHTML += "<option>아우디R8</option>";
 		yearSelect.innerHTML += "<option>포르쉐</option>";
 }
+ updateImageSource();
 }
+
+ function updateImageSource() {
+            var year = document.getElementsByName("year")[0].value;
+            var imageElement = document.getElementById("car-image");
+            var imagePath = "";
+
+            if (year === "소나타") {
+                imagePath = "../Transportation/image/sonata.png";
+            } else if (year === "K3") {
+                imagePath = "../Transportation/image/k3.png";
+            } else if (year === "싼타페") { 
+                imagePath ="../Transportation/image/santape.png";
+            } else if (year === "SM3") {
+                imagePath = "../Transportation/image/sm3.png";
+            } else if (year === "제네시스") {
+                imagePath = "../Transportation/image/제네시스.png";
+            } else if (year === "카니발") {
+                imagePath = "../Transportation/image/카니발.png";
+            } else if (year === "벤츠") {
+                imagePath = "../Transportation/image/벤츠.png";
+            } else if (year === "페라리") {
+                imagePath = "../Transportation/image/페라리.png";
+            } else if (year === "i40") {
+                imagePath = "../Transportation/image/i40.png";
+            } else if (year === "i30") {
+                imagePath = "../Transportation/image/i30.png";
+            } else if (year === "클리오") {
+                imagePath = "../Transportation/image/클리오.png";
+            } else if (year === "아베오") {
+                imagePath = "../Transportation/image/아베오.png";
+            } else if (year === "County") {
+                imagePath = "../Transportation/image/카운티.png";
+            } else if (year === "KAWBUS") {
+                imagePath = "../Transportation/image/ㅋㅋㅋ.png";
+            } else if (year === "대형 버스") {
+                imagePath = "../Transportation/image/대형버스.png";
+            } else if (year === "벨로스터") {
+                imagePath = "../Transportation/image/벨로스터.png";
+            } else if (year === "아우디R8") {
+                imagePath = "../Transportation/image/아우디.png";
+            } else if (year === "포르쉐") {
+                imagePath = "../Transportation/image/포르쉐.png";
+            }  else if (year === "코란도") {
+                imagePath = "../Transportation/image/코란도.png";
+            }   else if (year === "투싼") {
+                imagePath = "../Transportation/image/tucsan.png";
+            }       
+            imageElement.src = imagePath;
+        }    
+ 
 </script>
-
-<div style="text-align:center; margin:auto; width:100%; padding:15px; ">
-      <span> 
-    <select name="seating"  style="width:14%; height:40px; position:relative; bottom:-40px; " onchange="updatetimeOptions()" >
-
-	</select>  
-    </span>
-</div>
-<script>
-function updateyearOptions() {
-	var carType = document.getElementsByName("carType")[0].value;
-	var seatingSelect = document.getElementsByName("seating")[0];
-	seatingSelect.innerHTML = "";
-
-	if (carType === "버스") {
-		seatingSelect.innerHTML += "<option>15인승</option>";
-		seatingSelect.innerHTML += "<option>15인승 이상</option>";		
-	} else if (carType === "SUV") {
-		seatingSelect.innerHTML += "<option>4인승</option>";
-		seatingSelect.innerHTML += "<option>6인승</option>";		
-	} else if (carType === "왜건") {
-		seatingSelect.innerHTML += "<option>2인승</option>";
-		seatingSelect.innerHTML += "<option>4인승</option>";
-}else if (carType === "해치백") {
-		seatingSelect.innerHTML += "<option>2인승</option>";
-		seatingSelect.innerHTML += "<option>4인승</option>";
-}else if (carType === "세단") {
-		seatingSelect.innerHTML += "<option>4인승</option>";
-}else if (carType === "쿠페") {
-		seatingSelect.innerHTML += "<option>2인승</option>";
-		seatingSelect.innerHTML += "<option>4인승</option>";
-}
-}
-</script>
-
-
-
-<div style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px; padding:15px;">
+<div style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px; padding:15px;" required>
     <span> <input type="date" name="startday" style="width:14%; height:40px;" > </span>
 </div>
 
-
 <div style="text-align:center; margin:auto; width:100%; padding:15px;">
-     <select name="time"  style="width:14%; height:40px; position:relative; bottom:-40px;" onchange="updatepriceOptions()"  >
+     <select name="time"  style="width:14%; height:40px; position:relative; bottom:-40px;" onchange="updatepriceOptions()"  required>
+        <option value="3시간">3시간</option>
+		<option value="6시간">6시간</option>
+		<option value="9시간">9시간</option>
+		<option value="12시간">12시간</option>
+			<option value="24시간">24시간</option>
+				<option value="48시간">48시간</option>
 	</select>  
     </span>
 </div>
-<script>
-function updatetimeOptions() {
-	var seating = document.getElementsByName("seating")[0].value;
-	var timeSelect = document.getElementsByName("time")[0];
-	timeSelect.innerHTML = "";
 
-	if (seating === "2인승") {
-		timeSelect.innerHTML += "<option>3시간</option>";
-    timeSelect.innerHTML += "<option>6시간</option>";
-    timeSelect.innerHTML += "<option>9시간</option>";
-    timeSelect.innerHTML += "<option>12시간</option>";
-    timeSelect.innerHTML += "<option>24시간</option>";
-    timeSelect.innerHTML += "<option>48시간</option>";
-	} else if (seating === "4인승") {
-				timeSelect.innerHTML += "<option>3시간</option>";
-    timeSelect.innerHTML += "<option>6시간</option>";
-    timeSelect.innerHTML += "<option>9시간</option>";
-    timeSelect.innerHTML += "<option>12시간</option>";
-    timeSelect.innerHTML += "<option>24시간</option>";
-    timeSelect.innerHTML += "<option>48시간</option>";
-	
-	} else if (seating === "6인승") {
-				timeSelect.innerHTML += "<option>3시간</option>";
-    timeSelect.innerHTML += "<option>6시간</option>";
-    timeSelect.innerHTML += "<option>9시간</option>";
-    timeSelect.innerHTML += "<option>12시간</option>";
-    timeSelect.innerHTML += "<option>24시간</option>";
-    timeSelect.innerHTML += "<option>48시간</option>";
-		
-}else if (seating === "15인승") {
-			timeSelect.innerHTML += "<option>3시간</option>";
-    timeSelect.innerHTML += "<option>6시간</option>";
-    timeSelect.innerHTML += "<option>9시간</option>";
-    timeSelect.innerHTML += "<option>12시간</option>";
-    timeSelect.innerHTML += "<option>24시간</option>";
-    timeSelect.innerHTML += "<option>48시간</option>";
-		
-}else if (seating === "15인승 이상") {
-				timeSelect.innerHTML += "<option>3시간</option>";
-    timeSelect.innerHTML += "<option>6시간</option>";
-    timeSelect.innerHTML += "<option>9시간</option>";
-    timeSelect.innerHTML += "<option>12시간</option>";
-    timeSelect.innerHTML += "<option>24시간</option>";
-    timeSelect.innerHTML += "<option>48시간</option>";
-}
-}
-</script>
-    <div style="text-align:center; margin:auto; width:100%; padding:15px;">
+<div style="text-align:center; margin:auto; width:100%; padding:15px; ">
       <span> 
-    <select name="price"  style="width:14%; height:40px; position:relative; bottom:-40px; "  >
+    <select name="seating"  style="width:14%; height:40px; position:relative; bottom:-40px; " onchange="updatetimeOptions()" required >
+
 	</select>  
     </span>
 </div>
 
 <script>
 function updatepriceOptions() {
+    
 	var time = document.getElementsByName("time")[0].value;
+	var seatingSelect = document.getElementsByName("seating")[0];
+	seatingSelect.innerHTML = "";
+
+	if (time === "3시간") {
+		seatingSelect.innerHTML += "<option>15인승</option>";
+		seatingSelect.innerHTML += "<option>15인승 이상</option>";		
+	} else if (time === "6시간") {
+		seatingSelect.innerHTML += "<option>4인승</option>";
+		seatingSelect.innerHTML += "<option>6인승</option>";		
+	} else if (time === "9시간") {
+		seatingSelect.innerHTML += "<option>2인승</option>";
+		seatingSelect.innerHTML += "<option>4인승</option>";
+}else if (time === "12시간") {
+		seatingSelect.innerHTML += "<option>2인승</option>";
+		seatingSelect.innerHTML += "<option>4인승</option>";
+}else if (time === "24시간") {
+		seatingSelect.innerHTML += "<option>4인승</option>";
+        seatingSelect.innerHTML += "<option>6인승</option>";
+}else if (time === "48시간") {
+		seatingSelect.innerHTML += "<option>2인승</option>";
+		seatingSelect.innerHTML += "<option>4인승</option>";
+}
+
+}
+</script>
+
+    <div style="text-align:center; margin:auto; width:100%; padding:15px;">
+      <span> 
+    <select name="price"  style="width:14%; height:40px; position:relative; bottom:-40px; "  required>
+	</select>  
+    </span>
+</div>
+
+<script>
+function updatetimeOptions() {
+	var seating = document.getElementsByName("seating")[0].value;
 	var priceSelect = document.getElementsByName("price")[0];
 	priceSelect.innerHTML = "";
 
-	if (time === "3시간") {
+	if (seating === "2인이상") {
 		priceSelect.innerHTML += "<option>41000원</option>";
 			
-	} else if (time === "6시간") {
+	} else if (seating === "4인승") {
 		priceSelect.innerHTML += "<option>65000원</option>";
 	
-	} else if (time === "9시간") {
+	} else if (seating === "6인승") {
 		priceSelect.innerHTML += "<option>80000원</option>";
 		
-}else if (time === "12시간") {
+}else if (seating === "15인승") {
 		priceSelect.innerHTML += "<option>90000원</option>";
 		
-}else if (time === "24시간") {
+}else if (seating === "15인승 이상") {
 		priceSelect.innerHTML += "<option>120000원</option>";
-}else if (time === "48시간") {
-		priceSelect.innerHTML += "<option>140000원</option>";
-		
 }
 }
 </script>

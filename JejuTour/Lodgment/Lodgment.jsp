@@ -66,7 +66,7 @@
     <div style=" border-top:1px solid; width:80%; height:200px; position:relative; bottom:-20px; margin:auto;">
         <div style="height:200px; ">
         
-    <span> <select name="hotel" id="hotel" style="width:12%; height:40px; position:relative; bottom:-40px; left:14%;">
+    <span> <select name="hotel" id="hotel" style="width:12%; height:40px; position:relative; bottom:-40px; left:14%;" required>
 		<option value="제주라온호텔앤리조트">제주 라온호텔 앤 리조트</option>
 		<option value="코업시티호텔하버뷰">코업시티호텔 하버뷰</option>
 		<option value="이스턴호텔제주">이스턴호텔제주</option>
@@ -76,7 +76,7 @@
 	</select>
     </span>
 
-    <span> <select name="date" id="date" style="width:12%; height:40px; position:relative; bottom:-40px; left:17%;" onchange="updatemanOptions()" >
+    <span> <select name="date" id="date" style="width:12%; height:40px; position:relative; bottom:-40px; left:17%;" onchange="updatemanOptions()"  required>
 		<option value="1박2일">1박 2일</option>
 		<option value="2박3일">2박 3일</option>
 		<option value="3박4일">3박 4일</option>
@@ -84,7 +84,7 @@
     </span>
 
       <span> 
-    <select name="man" id="man" style="width:12%; height:40px; position:relative; bottom:-40px; left:20%;" onchange="updatepriceOptions()" >
+    <select name="man" id="man" style="width:12%; height:40px; position:relative; bottom:-40px; left:20%;" onchange="updatepriceOptions()" required >
 
 	</select>  
     </span>
@@ -120,7 +120,7 @@ function updatemanOptions() {
 </script>
    
      <span> 
-     <select name="price" id="price" style="width:12%; height:40px; position:relative; bottom:-40px; left:23%;" >
+     <select name="price" id="price" style="width:12%; height:40px; position:relative; bottom:-40px; left:23%;"  required>
 	</select>
     </span>
 
