@@ -73,8 +73,8 @@
    
         </div>
                 <div style="text-align:center; margin:auto; padding:20px;">
-   <button style="background-color:white; height:45px; width:8%;  position:relative; left:-2%;"> <a href="LodgmentOkUpdate.jsp"><span style="font-weight:bolder; color:black;">변경하기</span></a></button>
-         <button style="background-color:white; height:45px; width:8%; position:relative; left:2%;"> <a href="LodgmentDelete.jsp"><span style="font-weight:bolder; color:black;">취소하기</span></a></button>
+  
+         <button style="background-color:white; height:45px; width:8%; position:relative;"> <a href="LodgmentDelete.jsp"><span style="font-weight:bolder; color:black;">취소하기</span></a></button>
          
          </div>
         </main>
