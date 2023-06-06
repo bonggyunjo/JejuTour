@@ -54,12 +54,12 @@
 				  <a href="../Introduce/Introduce.jsp">소개</a>
 				</li>
 				<li>
-				  <a href="../Login/login.jsp">숙박</a>
+				<a href="../Login/login.jsp">편의 시설</a>
 				</li>
 				<li>
-				  <a href="">이동 수단</a>
-				  <ul class="submenu2">
-					<li><a href="../Login/login.jsp">대중 교통</a></li>
+				  <a href="">시설 예약</a>
+				  <ul class="submenu2">					
+					<li><a href="../Login/login.jsp">숙박</a></li>
 					<li><a href="../Login/login.jsp">렌트</a></li>
 				  </ul>
 				</li>
