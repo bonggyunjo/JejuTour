@@ -46,8 +46,6 @@
   session.setAttribute("name", nameList);
   }
   
-  
-  
   response.sendRedirect("asd.jsp");
  %>
 </body>

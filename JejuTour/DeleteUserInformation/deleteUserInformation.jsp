@@ -7,7 +7,14 @@
 
 <html>
 <head>
-
+<style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
     <title>탈퇴 화면</title>
     
     <style type="text/css">
@@ -75,7 +82,7 @@
        
         
         <div style="padding : 50px; text-align:center;">
-        <input type="button" value="취소" style="height:40px; width:14%; font-weight:bold; font-size:15px; border-radius: 1em;  
+        <input type="button" value="뒤로가기" style="height:40px; width:14%; font-weight:bold; font-size:15px; border-radius: 1em;  
         background-color: lightgray; border: 2px solid darkgray;
         position:relative; left:-3%;" onclick="javascript:window.location='../MyPage/loginSuccessMyPage.jsp'">
 

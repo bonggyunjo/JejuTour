@@ -64,7 +64,7 @@ session.setAttribute("user_phone1",phone1);
 
 			<script>
 			alert("정보 수정을 성공 했습니다.");
-			location.href="../Login/login_welcome.jsp";
+			location.href="../MyPage/loginSuccessMyPage.jsp";
 				response.sendRedirect("../UpDate/upDate.jsp");
 			</script>
 

@@ -18,7 +18,6 @@
 	background-repeat:no-repeat;
       background-size:100%;
     }
-  
   </style>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -60,10 +59,11 @@
 	</header>
     
     <main>
-      <img id="car-image" style="width: 200px; height: 125px; margin-top: 20px; border: none; outline: none; box-shadow: none;">
+   <h2 style="text-align:center; margin:auto; position:relative; bottom:-40px;"> 예약 변경하기 </h2>
+   
+     
 
-
-        <form action="../Transportation/RentalCarjoin.jsp">
+        <form action="../MyPage/ReserveUpdate.jsp">
      
     <div style="  width:80%; height:200px; position:relative; bottom:-20px; margin:auto;">
        
@@ -120,58 +120,10 @@ function updatecarTypeOptions() {
 		yearSelect.innerHTML += "<option>아우디R8</option>";
 		yearSelect.innerHTML += "<option>포르쉐</option>";
 }
- updateImageSource();
+
 }
 
- function updateImageSource() {
-            var year = document.getElementsByName("year")[0].value;
-            var imageElement = document.getElementById("car-image");
-            var imagePath = "";
 
-            if (year === "소나타") {
-                imagePath = "../Transportation/image/sonata.png";
-            } else if (year === "K3") {
-                imagePath = "../Transportation/image/k3.png";
-            } else if (year === "싼타페") { 
-                imagePath ="../Transportation/image/santape.png";
-            } else if (year === "SM3") {
-                imagePath = "../Transportation/image/sm3.png";
-            } else if (year === "제네시스") {
-                imagePath = "../Transportation/image/제네시스.png";
-            } else if (year === "카니발") {
-                imagePath = "../Transportation/image/카니발.png";
-            } else if (year === "벤츠") {
-                imagePath = "../Transportation/image/벤츠.png";
-            } else if (year === "페라리") {
-                imagePath = "../Transportation/image/페라리.png";
-            } else if (year === "i40") {
-                imagePath = "../Transportation/image/i40.png";
-            } else if (year === "i30") {
-                imagePath = "../Transportation/image/i30.png";
-            } else if (year === "클리오") {
-                imagePath = "../Transportation/image/클리오.png";
-            } else if (year === "아베오") {
-                imagePath = "../Transportation/image/아베오.png";
-            } else if (year === "County") {
-                imagePath = "../Transportation/image/카운티.png";
-            } else if (year === "KAWBUS") {
-                imagePath = "../Transportation/image/ㅋㅋㅋ.png";
-            } else if (year === "대형 버스") {
-                imagePath = "../Transportation/image/대형버스.png";
-            } else if (year === "벨로스터") {
-                imagePath = "../Transportation/image/벨로스터.png";
-            } else if (year === "아우디R8") {
-                imagePath = "../Transportation/image/아우디.png";
-            } else if (year === "포르쉐") {
-                imagePath = "../Transportation/image/포르쉐.png";
-            }  else if (year === "코란도") {
-                imagePath = "../Transportation/image/코란도.png";
-            }   else if (year === "투싼") {
-                imagePath = "../Transportation/image/tucsan.png";
-            }       
-            imageElement.src = imagePath;
-        }    
- 
 </script>
 <div style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px; padding:15px;" required>
     <span> <input type="date" name="startday" style="width:14%; height:40px;" > </span>
@@ -264,6 +216,7 @@ function updatetimeOptions() {
     </div>
     </form>
 
+  
     </main>
 </body>
 </html>

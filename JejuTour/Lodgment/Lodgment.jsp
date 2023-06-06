@@ -14,7 +14,6 @@
 <style>
     body {
       background-image: url("../Introduce/image.1111.png");
-	background-repeat:no-repeat;
       background-size:100%;
     }
   </style>

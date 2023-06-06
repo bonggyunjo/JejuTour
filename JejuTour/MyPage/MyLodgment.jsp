@@ -15,6 +15,14 @@
 <html lang="en">
     
 <head>
+<style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="basic.css">  
@@ -54,7 +62,7 @@
         <h1 style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px;">예약 확인</h1>
         <span style="position:relative; left:55%; bottom:30px;"><img src="../MyPage/MyInformation.png" style="width:100px; height:65px;"></span>
         </div>
-        <div style="width:30%; height:500px; border:2px solid black; border-radius:1em; margin:auto; padding:20px;">
+        <div style="width:30%; height:400px; border:2px solid black; border-radius:1em; margin:auto; padding:20px;">
 
            <div style="width:100%: margin:auto; padding:13px; " ><h2 >아이디 : <%= id %></h2> </div>
        <div style=" width:100%: margin:auto; padding:13px; "><h2 >이름 : <%= name %></h2> </div>
@@ -64,7 +72,11 @@
      <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >차종 : <%= price %> </h2>  </div>
    
         </div>
-        
+                <div style="text-align:center; margin:auto; padding:20px;">
+   <button style="background-color:white; height:45px; width:8%;  position:relative; left:-2%;"> <a href="LodgmentOkUpdate.jsp"><span style="font-weight:bolder; color:black;">변경하기</span></a></button>
+         <button style="background-color:white; height:45px; width:8%; position:relative; left:2%;"> <a href="LodgmentDelete.jsp"><span style="font-weight:bolder; color:black;">취소하기</span></a></button>
+         
+         </div>
         </main>
 </body>
 </html>

@@ -52,6 +52,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
 <head>
     
     <link rel="stylesheet" href="basic.css">  
@@ -130,11 +138,12 @@
           
         </div>
 
+    
         <div class="button-submit">
-		<input type="submit" value="수정하기" onclick="check()" style="width:13%; height:50px;  border-radius: 1em;  background-color: lightgray; border: 2px solid darkgray; " >
+		<input type="submit" value="수정하기" onclick="check()" style="position:relative;left:10%; width:13%; height:50px;  border-radius: 1em;  background-color: lightgray; border: 2px solid darkgray; " >
         </div>		
                 </form>
-
+         <button value="뒤로가기"  onclick="javascript:window.location='../MyPage/loginSuccessMyPage.jsp'"  style=" position:relative;left:-10%; bottom:82px; width:13%; height:50px;  border-radius: 1em;  background-color: lightgray; border: 2px solid darkgray; " >뒤로가기</button>
             </div>
         </div>
         </main>

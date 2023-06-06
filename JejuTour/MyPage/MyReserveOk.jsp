@@ -17,6 +17,14 @@
 <html lang="en">
     
 <head>
+<style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="basic.css">  
@@ -66,10 +74,13 @@
      <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >인승 :   <%= seating %> </h2>  </div>
       <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >날짜 : <%= startday %> </h2>  </div>
      <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >대여 시간 : <%= time %> </h2> </div>
-     <div style=" width:100%: margin:auto;  padding:13px; "><h2 >금액 : <%= price %> </h2>  </div>
-          
+     <div style=" width:100%: margin:auto;  padding:13px; "><h2 >금액 : <%= price %> </h2>  </div>        
         </div>
-        
+        <div style="text-align:center; margin:auto; padding:20px;">
+   <button style="background-color:white; height:45px; width:8%;  position:relative; left:-2%;"> <a href="ReserveOkUpdate.jsp"><span style="font-weight:bolder; color:black;">변경하기</span></a></button>
+         <button style="background-color:white; height:45px; width:8%; position:relative; left:2%;"> <a href="ReserveDelete.jsp"><span style="font-weight:bolder; color:black;">취소하기</span></a></button>
+         
+         </div>
         </main>
 </body>
 </html>

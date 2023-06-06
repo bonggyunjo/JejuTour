@@ -17,7 +17,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    
+    <style>
+    body {
+      background-image: url("../Introduce/image.1111.png");
+	background-repeat:no-repeat;
+      background-size:100%;
+	  overflow:hidden;
+    }
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +63,7 @@
         <h1 style="text-align:center; margin:auto; width:100%; position:relative; bottom:-40px;">내 정보</h1>
         <span style="position:relative; left:55%; bottom:30px;"><img src="../MyPage/MyInformation.png" style="width:120px; height:65px;"></span>
         </div>
-        <div style="width:30%; height:400px; border:2px solid black; border-radius:1em; margin:auto; padding:20px;">
+        <div style="width:30%; height:400px; border-top:2px solid black; border-radius:2em;  margin:auto; padding:20px;">
         <div style="width:100%: margin:auto; padding:13px; " ><h2 >아이디 : <%= id %></h2> </div>
        <div style=" width:100%: margin:auto; padding:13px; "><h2 >이름 : <%= name %></h2> </div>
        <div style=" width:100%: margin:auto; padding:13px;"><h2 >나이 :<%= age %> </h2> </div>
@@ -64,7 +71,9 @@
      <div style=" width:100%: margin:auto;  padding:13px;"> <h2 >주소 : <%= address %> </h2> </div>
      <div style=" width:100%: margin:auto;  padding:13px; "><h2 >성별 : <%= gender %> </h2>  </div>
         </div>
-        
+        <div style="text-align:center; margin:auto;">
+         <button style="background-color:white; height:45px; width:8%; position:relative;"> <a href="../MyPage/loginSuccessMyPage.jsp"><span style="font-weight:bolder; color:black;">뒤로가기</span></a></button>
+        </div>
         </main>
 </body>
 </html>
