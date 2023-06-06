@@ -31,6 +31,7 @@
   border-right: 1px solid #acacac;
   padding: 6px 0;
   cursor: pointer;
+  text-align:center;
 }
 
 #category li.on {
