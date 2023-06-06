@@ -62,11 +62,11 @@ body {
 				  <a href="../Introduce/Introduce.jsp">소개</a>
 				</li>
 				<li>
-				<a href="../Placesearch/placesearch.jsp">대중 교통</a>
+				<a href="../Placesearch/placesearch.jsp">편의 시설</a>
 				</li>
 			
 				<li>
-				  <a href="#">이동 수단</a>
+				  <a href="#">시설 예약</a>
 				  <ul class="submenu2">
 						<li><a href="../Lodgment/Lodgment.jsp">숙박</a></li>
 					<li><a href="../Transportation/RentalCar.jsp">렌트</a></li>
