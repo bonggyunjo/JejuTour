@@ -68,7 +68,7 @@
     <span> <select name="hotel" id="hotel" style="width:12%; height:40px; position:relative; bottom:-40px; left:14%;" required>
 		<option value="제주라온호텔앤리조트">제주 라온호텔 앤 리조트</option>
 		<option value="코업시티호텔하버뷰">코업시티호텔 하버뷰</option>
-		<option value="이스턴호텔제주">이스턴호텔제주</option>
+		<option value="이스턴호텔제주">이스턴호텔 제주</option>
 		<option value="롯데시티호텔제주">롯데시티호텔 제주</option>
 			<option value="호텔스카브로">호텔스카브로</option>
 				<option value="엠스테이호텔제주">엠스테이호텔 제주</option>
@@ -253,7 +253,7 @@ function updatepriceOptions() {
 </div>
 
 <div>
-<h2 style="position:relative; left:1%;">엠스테이호텔제주</h2>
+<h2 style="position:relative; left:1%;">엠스테이호텔  제주</h2>
       <img src="../Lodgment/lottecityhotel.png" style="width:190px; height:190px; position:relative; bottom:-30px; left:-41%;">
        <span style="position : relative; bottom:160px; left:19%;"> 제주특별자치도 서귀포시 특별자치도, 태평로353번길 14 <br>
                                                            <span style="position:relative; bottom:-10px;"> 4성급 호텔 <br> <span>
@@ -273,7 +273,7 @@ function updatepriceOptions() {
 </details>
 </div>
 <div>
-<h2 style="position:relative; left:1%;">롯데시티호 텔제주</h2>
+<h2 style="position:relative; left:1%;">롯데시티호텔제주</h2>
       <img src="../Lodgment/lottecityhotel.png" style="width:190px; height:190px; position:relative; bottom:-30px; left:-41%;">
        <span style="position : relative; bottom:160px; left:19%;"> 제주특별자치도 제주시 도령로 83 <br>
                                                           <span style="position:relative; bottom:-10px;"> 4성급 호텔 <br> <span>
