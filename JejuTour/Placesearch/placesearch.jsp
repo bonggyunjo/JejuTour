@@ -1,19 +1,60 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%	String id = (String) session.getAttribute("user_id");
+    String name = (String) session.getAttribute("user_name");
+    %>
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+ body
+  {
+    background-size:100%;
+      background-image: url("../Introduce/image.1111.png");
+	  background-repeat : no-repeat;
+	
+    }
+</style>
     <meta charset="utf-8">
     <title>카테고리별 장소 검색하기</title>
     <link rel="stylesheet" href="place.css">
+    	<link rel="stylesheet" href="../Main/basic.css">
+		<link rel="stylesheet" href="../Main/header.css">
+		<link rel="stylesheet" href="../Main/dropdown.css">
+		<link rel="stylesheet" href="../Main/mainview.css">
 </head>
-<body>
+<body link="gray" vlink="gray" alink="gray">
+	 <header>
+        <div class="header-align">
+        <div id ="header-top">		
+          
+      
+        <span>
+			<a href="../MyPage/loginSuccessMyPage.jsp"  style="position :relative; left:-3.2%;">
+            마이페이지</a>
+        </span>       	
+        <span>
+            <a href="../Logout/logout.jsp"  style="position :relative; left:-3.2%;">
+            | 로그아웃</a>
+        </span>
+        </div>
+        
+        <div id="header-mainname">
+            <h1><a href="../Login/login_welcome.jsp" style="color:#77c466; text-decoration: none;"> 제주<span style="color:black;">어서옵세</span>  </a></h1>
+        </div>
+        
+        </div>
+        </header>
+        
+<main>
 <p style="margin-top:-12px">
 </p>
 <div class="map_wrap">
-    <div id="map" style="width:100%;height:100vh;position:relative;overflow:hidden;"></div>
+    <div id="map" style="width:90%;height:70vh;position:relative;overflow:hidden; text-align:center; margin:auto; bottom:-20%;"></div>
+    <div   style="display: flex;
+    justify-content: center;">
     <ul id="category">
         <li id="AT4" data-order="0"> 
-            <span class="category_bg bank"></span>
+            <span class="category_bg bank" ></span>
             명소
         </li>       
         <li id="PK6" data-order="1"> 
@@ -33,6 +74,7 @@
             편의점
         </li>      
     </ul>
+    </div>
 </div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=088d729e8c95f398ecdb03a002be5c43&libraries=services"></script>
@@ -229,5 +271,6 @@ function changeCategoryClass(el) {
     } 
 } 
 </script>
+</main>
 </body>
 </html>
